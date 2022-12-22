@@ -1,0 +1,172 @@
+:root {
+  --skin-brown: #CCA353;
+  --light-skin-color: #FDFBF5;
+  --light-black: #342F26;
+  --white: #FFFFFF;
+  --off-white: #F6F6F6;
+  --sidebar-item-bg: #FFFAEB;
+  --sidebar-text: #342F26;
+}
+
+body {
+  background: #FFFCF7 !important;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: 0 !important;
+  border: 0;
+  background: none;
+}
+
+.App-header {
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  /* box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.05); */
+  padding: 0px 42px;
+}
+
+.app-Logo {
+  gap: 24px;
+}
+
+.App-logo-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  color: var(--light-black);
+  margin: 0;
+}
+
+.text-skin-brown {
+  color: var(--skin-brown) !important;
+}
+
+.fill-skin-brown {
+  fill: var(--skin-brown);
+}
+
+.text-light-black {
+  color: var(--light-black) !important;
+}
+
+.text-white {
+  color: var(--white) !important;
+}
+
+.gap-16 {
+  gap: 16px !important;
+}
+
+.btn-brown-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border: 1px solid var(--skin-brown);
+  border-radius: 8px;
+  padding: 16px 30px;
+  color: var(--skin-brown);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.btn-brown-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  background-color: var(--skin-brown);
+  border-radius: 8px;
+  padding: 16px 30px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.search-bar {
+  width: 224px;
+  height: 48px;
+  background: var(--off-white);
+  border-radius: 8px;
+  outline: 0 !important;
+  border: 0;
+  padding: 16px;
+}
+
+.search-bar-icon {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+.user {
+  border: 1px solid var(--skin-brown);
+  border-radius: 8px;
+  height: 48px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 16px 0px 16px 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--light-black);
+  background-color: var(--light-skin-color);
+}
+
+.user-icon {
+  background-color: var(--skin-brown);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.app-sidebar {
+  margin-top: 45px;
+  padding: 0px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 336px;
+}
+
+.sidebar-item {
+  height: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--sidebar-text);
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.sidebar-item:hover {
+  color: var(--skin-brown);
+}
+
+.sidebar-item-active {
+  background: var(--sidebar-item-bg);
+  border-radius: 8px;
+  color: var(--skin-brown);
+  fill: var(--skin-brown) !important;
+  font-weight: 600;
+}

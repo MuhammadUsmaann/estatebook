@@ -1,8 +1,41 @@
+import { Field, Form, Formik } from "formik";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import ForgotPassword from "../components/images/forgotpassword";
-
+import { resetPasswordApi } from "../store/api";
+import { forgetPasswordSchema } from "../utils";
 import "./pform.css";
 const ForgotPasword = () => {
+  const search = useLocation().search;
+  const code = new URLSearchParams(search).get("code");
+  const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    if (!code) {
+      navigate("/login");
+    }
+  }, []);
+  const onSubmit = (values, props) => {
+    setIsLoading(true);
+    resetPasswordApi(values, code)
+      .then((response) => {
+        setIsLoading(false);
+        navigate("/login");
+        toast.success(response?.data?.message);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        toast.error(error?.data?.message);
+      });
+  };
+  const initialValues = {
+    password: "",
+    confirmPassword: "",
+  };
+
   return (
     <>
       <div className="row m-0" id="estatelogin">
@@ -13,49 +46,56 @@ const ForgotPasword = () => {
               <span className="text-light-black"> Your Password</span>
             </p>
             <div className="orangeline"></div>
-            <form action="" className="text-light-black">
-              <div className="d-flex flex-column mb-3">
-                <label
-                  className="font-16 font-weight-600 pb-2 "
-                  htmlFor="newpassword"
-                >
-                  New Password
-                </label>
-                <input
-                  type="password"
-                  className="p-input-style font-16 font-weight-500 w-100"
-                  required
-                  id="newpassword"
-                  placeholder="Atlease 8 characters"
-                  name="newpassword"
-                />
-              </div>
-              <div className="d-flex flex-column mb-3">
-                <label
-                  className="font-16 font-weight-600 pb-2 "
-                  htmlFor="email"
-                >
-                  Confirm New Password
-                </label>
-                <input
-                  type="password"
-                  className="p-input-style font-16 font-weight-500 w-100"
-                  required
-                  id="password"
-                  placeholder="Atlease 8 characters"
-                  minLength={8}
-                  name="password"
-                />
-              </div>
+            <Formik
+              initialValues={initialValues}
+              validationSchema={forgetPasswordSchema}
+              onSubmit={onSubmit}>
+              {({ touched, errors, isSubmitting, values, setFieldValue }) => (
+                <Form action="" className="text-light-black">
+                  <div className="d-flex flex-column mb-3">
+                    <label
+                      className="font-16 font-weight-600 pb-2 "
+                      htmlFor="newpassword">
+                      New Password
+                    </label>
+                    <Field
+                      type="password"
+                      className="p-input-style font-16 font-weight-500 w-100"
+                      required
+                      id="newpassword"
+                      placeholder="Atlease 8 characters"
+                      name="password"
+                    />
+                  </div>
+                  <div className="d-flex flex-column mb-3">
+                    <label
+                      className="font-16 font-weight-600 pb-2 "
+                      htmlFor="email">
+                      Confirm New Password
+                    </label>
+                    <Field
+                      type="password"
+                      className="p-input-style font-16 font-weight-500 w-100"
+                      required
+                      id="password"
+                      placeholder="Atlease 8 characters"
+                      minLength={8}
+                      name="confirmPassword"
+                    />
+                  </div>
 
-              <button className="e-btn-style bg-skin mt-5 text-white font-weight-600 mb-5 w-100 mb-220px">
-                Save
-              </button>
-            </form>
+                  <button
+                    type="submit"
+                    className="e-btn-style bg-skin  text-white font-weight-600  w-100 ">
+                    Save
+                  </button>
+                </Form>
+              )}
+            </Formik>
 
-            <p className="pt-5 text-light-black font-weight-500 copyright">
+            {/* <p className="pt-5 text-light-black font-weight-500 copyright">
               © Copyright 2022 Estate Book. All Rights Reserved
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="p-right  p-0">

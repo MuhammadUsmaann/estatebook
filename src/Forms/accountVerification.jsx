@@ -55,7 +55,7 @@ const AccountVerification = () => {
                 />
               </div>
 
-              <button className="e-btn-style bg-skin mt-5 text-white font-weight-600 mb-5 w-100 mb-220px">
+              <button className="e-btn-style bg-skin mt-5 text-white font-weight-600 w-100 mb-220px">
                 Verify
               </button>
             </form>
@@ -79,6 +79,7 @@ const AccountVerification = () => {
             </p>
             <div className="w-100 d-flex align-items-center ">
               <Accountvmain />
+
             </div>
           </div>
         </div>

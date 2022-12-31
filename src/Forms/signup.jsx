@@ -4,6 +4,7 @@ import Google from "../components/images/Google";
 import Signupnewmain from "../components/images/signupnewmain";
 import "./pform.css";
 import { MuiTelInput } from "mui-tel-input";
+import { NavLink } from "react-router-dom";
 
 const Signup = () => {
   const [phone, setPhone] = React.useState("+9239699999");
@@ -98,9 +99,9 @@ const Signup = () => {
                 <Google /> <span className="pl-2">Google</span>
               </button>
             </div>
-            <p className="text-center mb-5 font-weight-500 mb-220px">
-              Already have an account? <span className="text-skin">Login</span>
-            </p>
+            <div className="text-light-black mb-220px" >
+              <p className="text-center font-weight-500 "> Already have an account? <NavLink to='/' className="text-skin cr-p">Login</NavLink></p>
+            </div>
 
             <p className="pt-5 text-light-black font-weight-500 copyright">
               © Copyright 2022 Estate Book. All Rights Reserved

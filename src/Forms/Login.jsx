@@ -1,4 +1,6 @@
 import React from "react";
+import Facebook from "../components/images/facebook";
+import Google from "../components/images/Google";
 import "./pform.css";
 const LoginPage = () => {
   return (
@@ -60,14 +62,14 @@ const LoginPage = () => {
               </span>
             </div>
 
-            {/* <div className="justify-content-between d-flex align-items-center text-light-black mb-5 mb-220px">
+            <div className="justify-content-between d-flex align-items-center text-light-black  mb-220px">
               <button className="e-btn-style mr-4 bg-white font-weight-600 w-100">
                 <Facebook /> <span className="pl-2">Facebook</span>
               </button>
               <button className="e-btn-style bg-white font-weight-600 w-100">
                 <Google /> <span className="pl-2">Google</span>
               </button>
-            </div> */}
+            </div>
 
             <p className="pt-5 text-light-black font-weight-500 copyright">
               © Copyright 2022 Estate Book. All Rights Reserved

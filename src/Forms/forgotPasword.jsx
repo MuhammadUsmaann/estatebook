@@ -48,7 +48,7 @@ const ForgotPasword = () => {
                 />
               </div>
 
-              <button className="e-btn-style bg-skin mt-5 text-white font-weight-600 mb-5 w-100 mb-220px">
+              <button className="e-btn-style bg-skin mt-5 text-white font-weight-600 w-100 mb-220px">
                 Save
               </button>
             </form>

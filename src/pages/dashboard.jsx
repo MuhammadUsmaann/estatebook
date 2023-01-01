@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Dashboard() {
-    return (<>
-        <h1>Nuamn</h1>
-    </>)
+const Dashboard = () => {
+    return (
+        <div>
+            <h1>Dashboard</h1>
+        </div>
+    )
 }
 
 export default Dashboard

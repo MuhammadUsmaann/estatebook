@@ -40,6 +40,7 @@
     "react-helmet": "^6.1.0",
     "react-loading-screen": "0.0.17",
     "react-owl-carousel": "^2.3.3",
+    "react-phone-input-2": "^2.15.1",
     "react-portal": "^4.2.1",
     "react-redux": "^7.2.8",
     "react-router-dom": "^6.4.1",

@@ -1,5 +1,11 @@
 // @ts-nocheck
+import AgentsIcon from '../../../components/Icons/agentsIcon';
+import CustomProfileIcon from '../../../components/Icons/customProfileIcon';
 import DashboardIcon from '../../../components/Icons/dashboardIcon';
+import NavProfileIcon from '../../../components/Icons/navprofileIcon';
+import PostlistingIcon from '../../../components/Icons/postlistingIcon';
+import ProfileSettingIcon from '../../../components/Icons/profilesettingIcon';
+import PropertyManagementIcon from '../../../components/Icons/propertymanagementIcon';
 
 const SideBarRoutes = () => {
   // const { IsUserLoggedIn, AgentRole, SuperAdmin, UserDetails } = Hooks();
@@ -9,29 +15,37 @@ const SideBarRoutes = () => {
     {
       name: "Dashboard Overview ",
       link: "/Dashboard",
-      icon: DashboardIcon,
       visiblity: true,
+      icon: <NavProfileIcon />
     },
     {
       name: "Post Listing",
-      link: "/postlisting",
-      icon: DashboardIcon,
+      link: "/dashboard/postlisting",
+      icon: <PostlistingIcon />,
       visiblity: true,
     },
     {
       name: "Property Management",
-      link: "/propertymanagement",
-      icon: DashboardIcon,
+      link: "/dashboard/propertymanagement",
+      icon: <PropertyManagementIcon />,
       visiblity: true,
-    }, {
+    },
+    {
       name: "Custom Profile Builder",
-      link: "CustomProfileBuilder",
-      icon: DashboardIcon,
+      link: "/dashboard/customprofilebuilder",
+      icon: <CustomProfileIcon />,
       visiblity: true,
-    }, {
+    },
+    {
       name: "Profile Settings",
-      link: "/profilesettings",
-      icon: DashboardIcon,
+      link: "/dashboard/profilesettings",
+      icon: <ProfileSettingIcon />,
+      visiblity: true,
+    },
+    {
+      name: "Agents",
+      link: "/dashboard/agents",
+      icon: <AgentsIcon />,
       visiblity: true,
     }
 

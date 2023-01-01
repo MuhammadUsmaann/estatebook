@@ -35,7 +35,7 @@ export default function Header(props) {
 
           <div className='d-flex align-items-center gap-16'>
             <button className='btn-brown-outline'>My Listing</button>
-            <button className='btn-brown-bg'>My Listing</button>
+            <button className='btn-brown-bg'>Post Listing</button>
             <form>
               <div className='position-relative'>
                 <input placeholder='Company ID' className='search-bar' />

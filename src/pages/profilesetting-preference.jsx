@@ -56,23 +56,28 @@ const Preferences = () => {
 
                     <div className='d-flex justify-content-between align-items-center'>
                         <div className="d-flex flex-column mb-4 w-100 mr-4">
-                            <label
-                                className="font-16 font-weight-600 pb-2 "
-                                htmlFor="currency">
-                                Currency
-                            </label>
-                            <select required className='form-control form-control border-grey p-input-style font-16 font-weight-400 w-100'>
-                                <option>AED</option>
-                            </select>                    </div>
+                            <div className='selectdiv'>
+                                <label
+                                    className="font-16 font-weight-600 pb-2 "
+                                    htmlFor="currency">
+                                    Currency
+                                </label>
+                                <select required className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100'>
+                                    <option>AED</option>
+                                </select>
+                            </div>
+                        </div>
                         <div className="d-flex flex-column mb-4 w-100">
-                            <label
-                                className="font-16 font-weight-600 pb-2 "
-                                htmlFor="areaunit">
-                                Area Unit
-                            </label>
-                            <select required className='form-control form-control border-grey p-input-style font-16 font-weight-400 w-100'>
-                                <option>Sq. Ft.</option>
-                            </select>
+                            <div className='selectdiv'>
+                                <label
+                                    className="font-16 font-weight-600 pb-2 "
+                                    htmlFor="areaunit">
+                                    Area Unit
+                                </label>
+                                <select required className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100'>
+                                    <option>Sq. Ft.</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 

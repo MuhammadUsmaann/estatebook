@@ -14,7 +14,7 @@ const ChangePassword = () => {
                                 htmlFor="password">
                                 Old Password
                             </label>
-                            <input type="password" required placeholder='Enter Older Password' className='form-control form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                            <input type="password" required placeholder='Enter Older Password' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
                         </div>
                         <div className="d-flex flex-column mb-4 w-100">
                             <label
@@ -22,7 +22,7 @@ const ChangePassword = () => {
                                 htmlFor="email">
                                 New Password
                             </label>
-                            <input required type='password' placeholder='Enter New Password' className='form-control form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                            <input required type='password' placeholder='Enter New Password' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
                         </div>
                         <div className="d-flex flex-column mb-4 w-100">
                             <label
@@ -30,7 +30,7 @@ const ChangePassword = () => {
                                 htmlFor="email">
                                 Confirm Password
                             </label>
-                            <input required type='password' placeholder='Confirm Password' className='form-control form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                            <input required type='password' placeholder='Confirm Password' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
                         </div>
                     </div>
 

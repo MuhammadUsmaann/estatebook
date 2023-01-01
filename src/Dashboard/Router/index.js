@@ -3,6 +3,7 @@ import React from 'react';
 import Dashboard from '../../pages/dashboard';
 import ProfileSetting from '../../pages/profilesetting';
 import Agents from '../../pages/agents';
+import PropertyManagement from '../../pages/propertyManagement';
 const UserRouter = () => {
     return (
         <>
@@ -27,7 +28,8 @@ const UserRouter = () => {
                 <Route path="/dashboard/whatsapp" element={<WhatsAppPage />} />
                 <Route path="*" element={<Navigate replace to="/dashboard/notfound" />} /> */}
 
-                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/propertymanagement" element={<PropertyManagement />} />
                 <Route path="/profilesettings" element={<ProfileSetting />} />
                 <Route path="/agents" element={<Agents />} />
 

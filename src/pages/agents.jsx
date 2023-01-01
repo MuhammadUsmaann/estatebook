@@ -157,7 +157,7 @@ const Agents = () => {
     return (
 
         <>
-            <div className='content-page' id='agentspage'>
+            <div className='content-page w-100' id='agentspage'>
                 <div className='d-flex justify-content-end align-items-center w-100'>
                     <button className='btn-brown-bg'>Add New Agent</button>
                 </div>

@@ -14,37 +14,37 @@ const SideBarRoutes = () => {
   const Routes = [
     {
       name: "Dashboard Overview ",
-      link: "/Dashboard",
+      link: "/",
       visiblity: true,
       icon: <NavProfileIcon />
     },
     {
       name: "Post Listing",
-      link: "/dashboard/postlisting",
+      link: "/postlisting",
       icon: <PostlistingIcon />,
       visiblity: true,
     },
     {
       name: "Property Management",
-      link: "/dashboard/propertymanagement",
+      link: "/propertymanagement",
       icon: <PropertyManagementIcon />,
       visiblity: true,
     },
     {
       name: "Custom Profile Builder",
-      link: "/dashboard/customprofilebuilder",
+      link: "/customprofilebuilder",
       icon: <CustomProfileIcon />,
       visiblity: true,
     },
     {
       name: "Profile Settings",
-      link: "/dashboard/profilesettings",
+      link: "/profilesettings",
       icon: <ProfileSettingIcon />,
       visiblity: true,
     },
     {
       name: "Agents",
-      link: "/dashboard/agents",
+      link: "/agents",
       icon: <AgentsIcon />,
       visiblity: true,
     }

@@ -7,9 +7,7 @@ import PreferenceIcon from '../components/Icons/preferenceIcon'
 import LockIcon from '../components/Icons/lockIcon'
 const ProfileSetting = () => {
     return (
-        <div className='content-page' id='profilesetting'>
-
-
+        <div className='content-page w-100' id='profilesetting'>
 
             <ul className="nav nav-tabs border-0" id="myTab" role="tablist">
                 <li className="nav-item">

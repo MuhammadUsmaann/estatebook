@@ -28,8 +28,8 @@ const UserRouter = () => {
                 <Route path="*" element={<Navigate replace to="/dashboard/notfound" />} /> */}
 
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/dashboard/profilesettings" element={<ProfileSetting />} />
-                <Route path="/dashboard/agents" element={<Agents />} />
+                <Route path="/profilesettings" element={<ProfileSetting />} />
+                <Route path="/agents" element={<Agents />} />
 
             </Routes>
         </>);

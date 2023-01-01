@@ -9,10 +9,10 @@ const ProfileSetting = () => {
     return (
         <div className='content-page w-100' id='profilesetting'>
 
-            <ul className="nav nav-tabs border-0" id="myTab" role="tablist">
-                <li className="nav-item">
+            <ul className="nav nav-tabs border-0 mb-1" id="myTab" role="tablist">
+                <li className="nav-item ">
                     <a
-                        className="links mr-3 active"
+                        className="links  mb-3 mr-3 active"
                         id="home-tab"
                         data-toggle="tab"
                         href="#home"
@@ -23,9 +23,9 @@ const ProfileSetting = () => {
                         <ProfileIcon /> <span className='pl-2'>Profile</span>
                     </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item ">
                     <a
-                        className="links mr-3 "
+                        className="links  mb-3 mr-3 "
                         id="profile-tab"
                         data-toggle="tab"
                         href="#profile"
@@ -36,9 +36,9 @@ const ProfileSetting = () => {
                         <PreferenceIcon /> <span className='pl-2'>Preferences</span>
                     </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item ">
                     <a
-                        className="links mr-3 "
+                        className="links  mb-3 mr-3 "
                         id="contact-tab"
                         data-toggle="tab"
                         href="#contact"
@@ -83,9 +83,9 @@ const ProfileSetting = () => {
             </div>
 
 
-            <div className="justify-content-between d-flex align-items-center w-100 pt-4 text-light-grey font-16 font-weight-400">
-                <p>© Copyright 2022 Estate Book. All Rights Reserved</p>
-                <p>Terms & Conditions  |  Privacy Policy</p>
+            <div className="justify-content-between flex-md-row flex-column d-flex align-items-center w-100 pt-4 text-light-grey font-16 font-weight-400">
+                <p className='text-center mb-md-0 mb-2'>© Copyright 2022 Estate Book. All Rights Reserved</p>
+                <p className='text-center'>Terms & Conditions  |  Privacy Policy</p>
             </div>
         </div>
     )

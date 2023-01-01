@@ -19,7 +19,8 @@ const customStyles = {
         boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.05)',
         borderRadius: '16px',
         border: '0',
-        padding: '40px'
+        padding: '40px',
+        overflow: 'auto'
 
     },
 };
@@ -210,7 +211,7 @@ const Agents = () => {
                 <div className='d-flex justify-content-end align-items-center w-100'>
                     <button className='btn-brown-bg' onClick={openModal}>Add New Agent</button>
                 </div>
-                <div className='w-100 rounded-8'>
+                <div className='w-100 rounded-8 overflow-auto'>
                     <table className='w-100'>
                         <thead>
                             <tr>
@@ -289,16 +290,16 @@ const Agents = () => {
                     <button onClick={closeModal}><CloseIcon /></button>
                 </div>
                 <div className='horizontal-line my-4'></div>
-                <div className='pt-5 d-flex justify-content-between'>
-                    <div className='pr-4'>
+                <div className='pt-5 d-flex flex-md-row flex-column justify-content-between'>
+                    <div className='pr-4 d-md-flex d-none flex-md-column flex-row justify-content-between'>
                         <div className=' bg-light-grey rounded-8 d-flex justify-content-center align-items-center grey-profile-box'>
                             <PersonIcon />
                         </div>
                         <button className='btn-brown-outline'>Upload Picture</button>
                     </div>
                     <form>
-                        <div className='d-flex justify-content-between mb-4 align-items-center'>
-                            <div className="d-flex flex-column w-100 mr-3">
+                        <div className='d-flex flex-md-row flex-column justify-content-between mb-4 align-items-center'>
+                            <div className="d-flex flex-column w-100 mb-md-0 mb-4 mr-md-3">
                                 <label
                                     className="font-16 font-weight-600 pb-2 "
                                     htmlFor="name">
@@ -315,8 +316,8 @@ const Agents = () => {
                                 <input required placeholder='Enter Agent ID' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
                             </div>
                         </div>
-                        <div className='d-flex justify-content-between mb-4 align-items-center'>
-                            <div className="d-flex flex-column w-100 mr-3">
+                        <div className='d-flex flex-md-row flex-column justify-content-between mb-4 align-items-center'>
+                            <div className="d-flex flex-column w-100  mb-md-0 mb-4 mr-md-3">
                                 <label
                                     className="font-16 font-weight-600 pb-2 "
                                     htmlFor="email">
@@ -345,7 +346,7 @@ const Agents = () => {
 
                         </div>
                         <div className='d-flex justify-content-between align-items-center mb-48px'>
-                            <div className="d-flex flex-column mb-3 w-100">
+                            <div className="d-flex flex-column mb-md-0 w-100">
                                 <label
                                     className="font-16 font-weight-600 pb-2 "
                                     htmlFor="name">

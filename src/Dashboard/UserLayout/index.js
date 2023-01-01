@@ -7,15 +7,17 @@ import Sidebar from './Sidebar/Sidebar'
 const UserLayout = ({ children }) => {
 
     const [isOpen, setIsOpen] = useState(true);
+    console.log(isOpen)
 
     return (
         <div className='app-container'>
             <Header setIsOpen={setIsOpen} isOpen={isOpen} />
-            <Sidebar isOpen={isOpen} />
+            {isOpen && <Sidebar isOpen={isOpen} />}
             <div className='main-content'>
-            {children}
+                {children}
             </div>
-        </ div>
+
+        </div>
     )
 }
 

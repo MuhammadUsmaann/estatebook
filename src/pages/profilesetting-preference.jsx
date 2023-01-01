@@ -54,8 +54,8 @@ const Preferences = () => {
                     </label>
                     <div className='horizontal-line'></div>
 
-                    <div className='d-flex justify-content-between align-items-center'>
-                        <div className="d-flex flex-column mb-4 w-100 mr-4">
+                    <div className='d-flex flex-md-row flex-column justify-content-between align-items-center'>
+                        <div className="d-flex flex-column mb-4 w-100 mr-md-4">
                             <div className='selectdiv'>
                                 <label
                                     className="font-16 font-weight-600 pb-2 "

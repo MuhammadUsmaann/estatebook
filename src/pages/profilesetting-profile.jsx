@@ -15,8 +15,8 @@ const Profile = () => {
     return (
         <div className='profile-setting-detail d-flex justify-content-center align-items-center'>
             <div className='w-75'>
-                <div className='d-flex justify-content-between align-items-center'>
-                    <div className='d-flex justify-between align-items-center'>
+                <div className='d-flex flex-xl-row flex-column justify-content-between align-items-xl-center'>
+                    <div className='d-flex  justify-between mb-xl-0 mb-4 align-items-center'>
                         <img src={ProfilePicture} />
                         <div className='pl-3'>
                             <h3 className='pb-2 font-24 font-weight-700 text-light-black'>RC Real Estate Pty Ltd</h3>
@@ -33,8 +33,8 @@ const Profile = () => {
                 </div>
                 <div className='horizontal-line'></div>
                 <form>
-                    <div className='d-flex justify-content-between align-items-center'>
-                        <div className="d-flex flex-column mb-4 w-100 mr-4">
+                    <div className='d-flex flex-md-row flex-column justify-content-between align-items-center'>
+                        <div className="d-flex flex-column mb-4 w-100 mr-md-4">
                             <label
                                 className="font-16 font-weight-600 pb-2 "
                                 htmlFor="name">
@@ -48,14 +48,14 @@ const Profile = () => {
                                 htmlFor="email">
                                 Email
                             </label>
-                            <input required placeholder='Company@email.com' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                            <input required type='email' placeholder='Company@email.com' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
                         </div>
                     </div>
-                    <div className='d-flex justify-content-between align-items-center'>
-                        <div className="d-flex flex-column mb-4  w-100 mr-4">
+                    <div className='d-flex flex-md-row flex-column justify-content-between align-items-center'>
+                        <div className="d-flex flex-column mb-4  w-100 mr-md-4">
                             <label
                                 className="font-16 font-weight-600 pb-2 "
-                                htmlFor="email">
+                                htmlFor="mobile">
                                 Mobile
                             </label>
                             <PhoneInput
@@ -67,12 +67,12 @@ const Profile = () => {
                                     required: true,
                                     autoFocus: true,
                                 }}
-                                inputClass="form-control form-control border-grey p-input-style font-16 w-100"
+                                inputClass="form-control h-48px form-control border-grey p-input-style font-16 w-100"
                             />                    </div>
-                        <div className="d-flex flex-column mb-4  w-100">
+                        <div className="d-flex flex-column mb-4 w-100">
                             <label
                                 className="font-16 font-weight-600 pb-2 "
-                                htmlFor="email">
+                                htmlFor="landline">
                                 Land Line
                             </label>
                             <PhoneInput
@@ -84,12 +84,12 @@ const Profile = () => {
                                     required: true,
                                     autoFocus: true,
                                 }}
-                                inputClass="form-control form-control border-grey p-input-style font-16 w-100"
+                                inputClass="form-control h-48px form-control border-grey p-input-style font-16 w-100"
                             />
                         </div>
                     </div>
-                    <div className='d-flex justify-content-between align-items-center'>
-                        <div className="d-flex flex-column mb-4 w-100 mr-4">
+                    <div className='d-flex flex-md-row flex-column justify-content-between align-items-center'>
+                        <div className="d-flex flex-column mb-4 w-100 mr-md-4">
                             <div className='selectdiv'>
                                 <label
                                     className="font-16 font-weight-600 pb-2 "
@@ -121,8 +121,8 @@ const Profile = () => {
                         </label>
                         <input required type="text" placeholder='Enter address' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
                     </div>
-                    <div className="justify-content-between d-flex align-items-center ">
-                        <label className="custom-checkbox d-flex align-items-center ">
+                    <div className="justify-content-between align-items-start flex-md-row flex-column d-flex align-items-md-center ">
+                        <label className="custom-checkbox mb-md-0 mb-4 d-flex align-items-center ">
                             <span className="pl-2 text-light-black font-weight-400">
                                 Update details in all property listings
                             </span>

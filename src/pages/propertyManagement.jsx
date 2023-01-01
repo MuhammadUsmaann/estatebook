@@ -39,8 +39,8 @@ const PropertyManagement = () => {
         <>
             <div className='content-page w-100 ' id='propertymanagement'>
                 <form className='w-100 content-box pad-40'>
-                    <div className='row m-0 mb-4'>
-                        <div className='col-3 py-0 pl-0'>
+                    <div className='row m-0 mb-xl-4'>
+                        <div className='col-xl-3 col-lg-6 col-12 pb-xl-0 pb-4  pl-0'>
                             <label
                                 className="font-16 font-weight-600 pb-2 "
                                 htmlFor="name">
@@ -48,7 +48,7 @@ const PropertyManagement = () => {
                             </label>
                             <input type="text" required placeholder='Enter Property ID' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
                         </div>
-                        <div className='col-3 py-0 pl-0'>
+                        <div className='col-xl-3 col-lg-6 col-12 pb-xl-0 pb-4 py-0 pl-0'>
                             <div className='selectdiv'>
                                 <label
                                     className="font-16 font-weight-600 pb-2 "
@@ -60,7 +60,7 @@ const PropertyManagement = () => {
                                 </select>
                             </div>
                         </div>
-                        <div className='col-3 py-0 pl-0'>
+                        <div className='col-xl-3 col-lg-6 col-12 pb-xl-0 pb-4 py-0 pl-0'>
                             <div className='selectdiv'>
                                 <label
                                     className="font-16 font-weight-600 pb-2 "
@@ -72,7 +72,7 @@ const PropertyManagement = () => {
                                 </select>
                             </div>
                         </div>
-                        <div className='col-3 py-0 pl-0'>
+                        <div className='col-xl-3 col-lg-6 col-12 pb-xl-0 pb-4 py-0 pl-0'>
                             <div className='selectdiv'>
                                 <label
                                     className="font-16 font-weight-600 pb-2 "
@@ -89,7 +89,7 @@ const PropertyManagement = () => {
 
 
                     <div className='row m-0'>
-                        <div className='col-3 py-0 pl-0'>
+                        <div className='col-xl-3 col-lg-6 col-12 pb-xl-0 pb-4 py-0 pl-0'>
                             <div className='selectdiv'>
                                 <label
                                     className="font-16 font-weight-600 pb-2 "
@@ -101,7 +101,7 @@ const PropertyManagement = () => {
                                 </select>
                             </div>
                         </div>
-                        <div className='col-3 py-0 pl-0'>
+                        <div className='col-xl-3 col-lg-6 col-12 pb-xl-0 pb-4 py-0 pl-0'>
                             <label
                                 className="font-16 font-weight-600 pb-2 "
                                 htmlFor="email">
@@ -110,7 +110,7 @@ const PropertyManagement = () => {
                             <input type="date" required placeholder='Select Date' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
 
                         </div>
-                        <div className='col-3 py-0 pl-0'>
+                        <div className='col-xl-3 col-12 py-0 pl-0'>
                             <label
                                 className="font-16 font-weight-600 pb-2 "
                                 htmlFor="email">
@@ -130,7 +130,7 @@ const PropertyManagement = () => {
                     {
                         recordTabs.map((data, index) => {
                             return (
-                                <li className="nav-item h-48px" key={index}>
+                                <li className="nav-item mb-2 h-48px " key={index}>
                                     <a
                                         className={`links mr-3 ${data.active ? 'active' : ''}`}
                                         id={data.id}

@@ -130,6 +130,15 @@ button {
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.05);
 }
 
+.app-header .record-box {
+  height: 444px;
+}
+
+.app-header .selectdiv::after {
+  top: 13px !important;
+  right: 8px !important;
+}
+
 ul,
 li {
   list-style-type: none;
@@ -422,7 +431,6 @@ select {
   border-radius: 16px;
   padding: 50px;
   width: 100%;
-  margin-top: 24px;
 }
 
 /* custom toogle */
@@ -517,6 +525,79 @@ select {
   line-height: 100%;
 }
 
-#propertymanagement .record-box {
-  height: 444px;
+
+
+
+/* responsive css */
+
+/* header + sidebar */
+@media screen and (max-width:992px) {
+  .app-sidebar {
+    width: 100px !important;
+  }
+
+  .app-sidebar a span {
+    display: none !important;
+  }
+
+  .app-sidebar-bottom {
+    justify-content: center !important;
+  }
+
+  .app-sidebar-bottom span {
+    display: none;
+  }
+
+  .sidebar-item {
+    padding: 0 13px !important;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .listingbutton {
+    display: none !important;
+  }
+
+  .listingbutton-select {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .listingbutton-select {
+    display: none !important;
+  }
+
+  .user {
+    display: none !important;
+  }
+}
+
+.user-dropdown .dropdown-menu {
+  transform: translate3d(-112px, 53px, 0px) !important;
+}
+
+/* @media screen and (max-width:600px) {
+  .app-sidebar {
+    display: none;
+  }
+} */
+
+/* profile setting */
+@media screen and (max-width:767px) {
+  .profile-setting-detail div {
+    width: 100% !important;
+  }
+}
+
+.customModal {
+  inset: 50% auto auto 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 12px;
+  border-radius: 16px;
+  border: 0px;
+  padding: 40px;
+  overflow: auto;
 }

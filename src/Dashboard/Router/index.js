@@ -4,8 +4,9 @@ import Dashboard from '../../pages/dashboard';
 import LoginPage from '../../Forms/Login';
 const UserRouter = () => {
     return (
-        <Routes>
-            {/* <Route path="/dashboard" element={<ProtectedRoutes component={Dashboard} />} />
+        <>
+            <Routes>
+                {/* <Route path="/dashboard" element={<ProtectedRoutes component={Dashboard} />} />
             <Route path="/dashboard/profile" element={<AuthenticatedRoutes component={UserProfile} />} />
             <Route path="/dashboard/properties" element={<ProtectedRoutes component={UserProperties} />} />
             <Route path="/dashboard/users" element={<AuthenticatedRoutes component={UsersList} />} />
@@ -22,13 +23,15 @@ const UserRouter = () => {
             <Route path="/dashboard/events/:id" element={<AuthenticatedRoutes component={EventScheduler} />} />
             <Route path="/dashboard/changepassword" element={<AuthenticatedRoutes component={UserChangePassword} />} />
             <Route path="/dashboard/notfound" element={<NotFound />} />
-
+            
             <Route path="/dashboard/whatsapp" element={<WhatsAppPage />} />
-
+            
             <Route path="*" element={<Navigate replace to="/dashboard/notfound" />} /> */}
 
-            <Route path="/dashboard" element={Dashboard} />
-        </Routes>
+                <Route to="/" element={Dashboard} />
+            </Routes>
+      
+      </>
     );
 };
 

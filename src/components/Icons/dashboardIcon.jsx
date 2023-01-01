@@ -1,6 +1,8 @@
 import React from 'react'
 
-function DashboardIcon(isActive) {
+function DashboardIcon(props) {
+    const isActive =props.isActive;
+
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={26} height={26} viewBox="0 0 26 26" fill="none" className={`${isActive ? 'fill-skin-brown' : ''}`}>
             <path d="M25.0006 11.6798V3.51996C25.0006 1.71999 24.2326 1 22.3246 1H17.4767C15.5688 1 14.8008 1.71999 14.8008 3.51996V11.6798C14.8008 13.4798 15.5688 14.1998 17.4767 14.1998H22.3246C24.2326 14.1998 25.0006 13.4798 25.0006 11.6798Z" stroke="#B5B5B5" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />

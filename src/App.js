@@ -7,30 +7,20 @@ import UserLayout from './Dashboard/UserLayout';
 import UserRouter from './Dashboard/Router';
 import { useLocation } from 'react-router-dom';
 function App() {
-  // const [isOnline] = useNetwork();
-  // // const networkState = useNetworkState();
-
-  // if (!isOnline) {
-  //   notification.config({
-  //     duration: 0,
-  //   });
-  //   notification.error({
-  //     message: "No internet connection",
-  //     description: "Cannot connect to the server, Check your internet network",
-  //   });
-  // }
+ const login=['/login','/signup','/accountverification','/forgotpassword']
   const location = useLocation();
-  if (location.pathname.includes('dashboard')) {
-    return (
-      <UserLayout>
-        <UserRouter />
-      </UserLayout>
-    );
-  } else {
+  console.log(location.pathname);
+  if (login.includes(location.pathname)) {
     return (
       <Layout>
         <Router />
       </Layout>
+    );
+  } else {
+    return (
+      <UserLayout>
+        <UserRouter />
+      </UserLayout>
     );
   }
 }

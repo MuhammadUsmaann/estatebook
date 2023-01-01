@@ -36,6 +36,10 @@
   height: 72px !important;
 }
 
+.cr-p {
+  cursor: pointer !important;
+}
+
 .copyright {
   position: absolute;
   bottom: 10px;

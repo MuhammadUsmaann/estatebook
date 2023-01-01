@@ -196,11 +196,10 @@ const Signup = () => {
                     <Field
                       type="password"
                       className={`form-control p-input-style font-16 font-weight-500 w-100
-                    ${
-                      touched.confirmPassword && errors.confirmPassword
-                        ? "is-invalid"
-                        : ""
-                    }`}
+                    ${touched.confirmPassword && errors.confirmPassword
+                          ? "is-invalid"
+                          : ""
+                        }`}
                       id="confirmPassword"
                       placeholder="Atlease 8 characters"
                       minLength={8}

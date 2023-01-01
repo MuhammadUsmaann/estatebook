@@ -1,25 +1,22 @@
 import React from 'react'
-import { useState } from 'react'
-import Footer from './Footer/Footer'
+import { NavLink, Route, Routes } from 'react-router-dom'
 import Header from './Header/Header'
 import Sidebar from './Sidebar/Sidebar'
 
-const UserLayout = ({ children }) => {
-
-    const [isOpen, setIsOpen] = useState(true);
-
+const UserLayout = (props) => {
+    const { children } = props;
     return (
-        <div className='app-container'>
-            <Header setIsOpen={setIsOpen} isOpen={isOpen} />
-            <Sidebar isOpen={isOpen} />
-            <div className='main-content'>
-            {children}
-            </div>
-            <div className='footer'>
-                <Footer/>
+        <>
+            <Header />
+            <div className='d-flex'>
+                <Sidebar />
+                {children}
+
+
+
             </div>
 
-        </ div>
+        </>
     )
 }
 

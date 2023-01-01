@@ -19,6 +19,7 @@ const Router = () => {
       <Route path="/signup" element={<AuthRoutes component={Signup} />} />
       <Route path="/accountverification" element={<AuthRoutes component={AccountVerification} />} />
       <Route path="/forgotpassword" element={<AuthRoutes component={ForgotPasword} />} /> */}
+      <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/accountverification" element={<AccountVerification />} />

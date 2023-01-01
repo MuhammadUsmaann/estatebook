@@ -11,6 +11,8 @@ import GoogleIcon from "../components/images/Google";
 import { loginAction } from "../store/actions";
 import { userLoginApi, socialLoginApi } from "../store/api";
 import { loginValidationSchema } from "../utils";
+import Loginmain from "../components/images/loginmain";
+
 import "./pform.css";
 const LoginPage = () => {
   useEffect(() => {
@@ -198,7 +200,8 @@ const LoginPage = () => {
                     className="e-btn-style mr-4 bg-white font-weight-600 w-100">
                     <FacebookIcon /> <span className="pl-2">Facebook</span>
                   </button>
-                )}
+                )
+                }
               />
               {/* <button className="e-btn-style mr-4 bg-white font-weight-600 w-100">
                 <FacebookIcon /> <span className="pl-2">Facebook</span>
@@ -223,7 +226,7 @@ const LoginPage = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="w-100 d-flex align-items-center ">
-              {/* <Loginmain /> */}
+              <Loginmain />
             </div>
           </div>
         </div>

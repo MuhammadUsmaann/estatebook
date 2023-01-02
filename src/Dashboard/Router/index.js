@@ -4,6 +4,7 @@ import Dashboard from '../../pages/dashboard';
 import ProfileSetting from '../../pages/profilesetting';
 import Agents from '../../pages/agents';
 import PropertyManagement from '../../pages/propertyManagement';
+import PostListing from '../../pages/postListing';
 const UserRouter = () => {
     return (
         <>
@@ -30,6 +31,7 @@ const UserRouter = () => {
 
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/propertymanagement" element={<PropertyManagement />} />
+                <Route path="/postlisting" element={<PostListing />} />
                 <Route path="/profilesettings" element={<ProfileSetting />} />
                 <Route path="/agents" element={<Agents />} />
 

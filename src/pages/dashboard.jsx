@@ -13,23 +13,23 @@ const Dashboard = () => {
         <div className='content-page'>
             <div className='content-box w-100 pad-40'>
                 <div className='row m-0 w-100 '>
-                    <div className='col-7 p-0'>
-                        <p className='font-36 font-weight-600 mb-4'>Looking to Sell or Rent Your Property</p>
+                    <div className='col-xl-7 col-12  p-0'>
+                        <p className='font-36 font-weight-700 mb-4'>Looking to Sell or Rent Your Property</p>
                         <p className='font-24 font-weight-500 mb-4 text-light-grey'>Post now on Estate Book to reach millions of genuine users! </p>
-                        <div className='d-flex justify-content-between align-items-center pt-2 pb-3'>
-                            <div className='d-flex justify-content-between align-items-center'>
+                        <div className='d-flex flex-md-row flex-column justify-content-between align-items-md-center align-items-start pt-2 pb-3'>
+                            <div className='d-flex justify-content-center mb-md-0 mb-2 align-items-center'>
                                 <div className='bg-light-skin p-2 rounded-8'>
                                     <CoupenIcon />
                                 </div>
                                 <p className='font-18 font-weight-500 pl-3'>Get Better Price</p>
                             </div>
-                            <div className='d-flex justify-content-between align-items-center'>
+                            <div className='d-flex justify-content-center mb-md-0 mb-2 align-items-center'>
                                 <div className='bg-light-skin p-2 rounded-8'>
                                     <PersonsIcon />
                                 </div>
                                 <p className='font-18 font-weight-500 pl-3'>Connect With Real Buyers</p>
                             </div>
-                            <div className='d-flex justify-content-between align-items-center'>
+                            <div className='d-flex justify-content-center align-items-center'>
                                 <div className='bg-light-skin p-2 rounded-8'>
                                     <StatusIcon />
                                 </div>
@@ -39,7 +39,7 @@ const Dashboard = () => {
                         </div>
                         <button className='btn-brown-bg mt-4'>Post Your Ad Now</button>
                     </div>
-                    <div className='col-5 p-0 text-right'>
+                    <div className='col-xl-5 col-12 p-0 text-xl-right text-center'>
                         <HomeDashboard />
                     </div>
                 </div>
@@ -47,13 +47,13 @@ const Dashboard = () => {
             </div>
             <div className=' w-100 mb-2 mt-4'>
                 <div className='row m-0 w-100 '>
-                    <div className=' col-6 p-0'>
-                        <div className='content-box pad-40 mr-4 h-100'>
+                    <div className=' col-xl-6 col-12 p-0 mb-xl-0 mb-4'>
+                        <div className='content-box pad-40 mr-xl-4  h-100'>
                             <p className='font-36 font-weight-600 mb-1'>Get Your Own Customised </p>
                             <p className='font-36 font-weight-600 mb-4 '>Profile</p>
 
-                            <div className='d-flex justify-content-between  pt-2 pb-3'>
-                                <div className='d-flex justify-content-between flex-column'>
+                            <div className='d-flex flex-md-row flex-column-reverse justify-content-between  pt-2 pb-3'>
+                                <div className='d-flex justify-content-between flex-column mt-xl-0 mt-3'>
                                     <p className='font-24 font-weight-500 mb-4 text-light-grey'>Become a Premium User </p>
                                     <button className='btn-brown-outline mt-4 w-75'>See Plans</button>
                                 </div>
@@ -62,13 +62,13 @@ const Dashboard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=' col-6 p-0'>
+                    <div className=' col-xl-6 col-12 p-0'>
                         <div className='content-box pad-40 h-100'>
                             <p className='font-36 font-weight-600 mb-1 '>Make Your Property </p>
                             <p className='font-36 font-weight-600 mb-4 '>Featured and Sell Faster</p>
 
-                            <div className='d-flex justify-content-between  pt-2 pb-3'>
-                                <div className='d-flex justify-content-between flex-column'>
+                            <div className='d-flex flex-md-row flex-column-reverse  justify-content-between  pt-2 pb-3'>
+                                <div className='d-flex justify-content-between flex-column mt-md-0 mt-3'>
                                     <p className='font-24 font-weight-500 mb-4 text-light-grey'>Become a Premium User </p>
                                     <button className='btn-brown-outline mt-4 w-75'>See Plans</button>
                                 </div>

@@ -185,16 +185,10 @@ const tableData = [
     },
 ]
 const Agents = () => {
-    let subtitle;
     const [modalIsOpen, setIsOpen] = React.useState(false);
 
     function openModal() {
         setIsOpen(true);
-    }
-
-    function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
     }
 
     function closeModal() {
@@ -280,7 +274,6 @@ const Agents = () => {
 
             <Modal
                 isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 style={customStyles}
                 contentLabel="Example Modal"
@@ -290,9 +283,9 @@ const Agents = () => {
                     <button onClick={closeModal}><CloseIcon /></button>
                 </div>
                 <div className='horizontal-line my-4'></div>
-                <div className='pt-5 d-flex flex-md-row flex-column justify-content-between'>
-                    <div className='pr-4 d-md-flex d-none flex-md-column flex-row justify-content-between'>
-                        <div className=' bg-light-grey rounded-8 d-flex justify-content-center align-items-center grey-profile-box'>
+                <div className='pt-md-5 d-flex flex-md-row flex-column justify-content-between'>
+                    <div className='pr-4 mb-md-0 mb-3'>
+                        <div className='mb-md-5 mb-3 bg-light-grey rounded-8 d-flex justify-content-center align-items-center grey-profile-box'>
                             <PersonIcon />
                         </div>
                         <button className='btn-brown-outline'>Upload Picture</button>

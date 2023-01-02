@@ -16,9 +16,10 @@ const Profile = () => {
         <div className='profile-setting-detail d-flex justify-content-center align-items-center'>
             <div className='w-75'>
                 <div className='d-flex flex-xl-row flex-column justify-content-between align-items-xl-center'>
-                    <div className='d-flex  justify-between mb-xl-0 mb-4 align-items-center'>
+                    <div className='d-flex flex-sm-row flex-column justify-between mb-xl-0 mb-4 align-items-sm-center align-items-start
+                    '>
                         <img src={ProfilePicture} />
-                        <div className='pl-3'>
+                        <div className='pl-sm-3 mt-sm-0 mt-2'>
                             <h3 className='pb-2 font-24 font-weight-700 text-light-black'>RC Real Estate Pty Ltd</h3>
                             <p className='pb-3 font-18 font-weight-400 text-grey'>company@email.com</p>
                             <button className='premium-btn font-12 font-weight-600'> <Premiumicon /><span className='pl-1'>Premium User</span></button>

@@ -2,7 +2,6 @@ import React from 'react'
 
 const Agent = () => {
     return (
-        <div>
             <svg width={48} height={48} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <rect width={48} height={48} rx={8} fill="#D9D9D9" />
                 <rect width={48} height={48} rx={8} fill="url(#pattern0)" />
@@ -14,8 +13,6 @@ const Agent = () => {
                 </defs>
             </svg>
 
-
-        </div>
     )
 }
 

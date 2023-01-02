@@ -12,7 +12,7 @@ const ProfileSetting = () => {
             <ul className="nav nav-tabs border-0 mb-1" id="myTab" role="tablist">
                 <li className="nav-item ">
                     <a
-                        className="links  mb-3 mr-3 active"
+                        className="links  mb-2 mr-3 active"
                         id="home-tab"
                         data-toggle="tab"
                         href="#home"
@@ -25,7 +25,7 @@ const ProfileSetting = () => {
                 </li>
                 <li className="nav-item ">
                     <a
-                        className="links  mb-3 mr-3 "
+                        className="links  mb-2 mr-3 "
                         id="profile-tab"
                         data-toggle="tab"
                         href="#profile"
@@ -38,7 +38,7 @@ const ProfileSetting = () => {
                 </li>
                 <li className="nav-item ">
                     <a
-                        className="links  mb-3 mr-3 "
+                        className="links  mb-2 mr-3 "
                         id="contact-tab"
                         data-toggle="tab"
                         href="#contact"
@@ -83,10 +83,10 @@ const ProfileSetting = () => {
             </div>
 
 
-            <div className="justify-content-between flex-md-row flex-column d-flex align-items-center w-100 pt-4 text-light-grey font-16 font-weight-400">
+            {/* <div className="justify-content-between flex-md-row flex-column d-flex align-items-center w-100 pt-4 text-light-grey font-16 font-weight-400">
                 <p className='text-center mb-md-0 mb-2'>© Copyright 2022 Estate Book. All Rights Reserved</p>
                 <p className='text-center'>Terms & Conditions  |  Privacy Policy</p>
-            </div>
+            </div> */}
         </div>
     )
 }

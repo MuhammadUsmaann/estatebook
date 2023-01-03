@@ -22,7 +22,6 @@
     "date-fns": "^2.29.3",
     "eslint-config-react-app": "^6.0.0",
     "formik": "^2.2.9",
-    "formik-yup": "0.0.5",
     "gapi-script": "^1.2.0",
     "history": "^4.10.1",
     "jquery": "^3.6.1",

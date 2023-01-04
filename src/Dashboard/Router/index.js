@@ -28,7 +28,7 @@ const UserRouter = () => {
                 <Route path="/dashboard/notfound" element={<NotFound />} />
                 <Route path="/dashboard/whatsapp" element={<WhatsAppPage />} />
                 <Route path="*" element={<Navigate replace to="/dashboard/notfound" />} /> */}
-
+                <Route path="/" element={<Dashboard />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/propertymanagement" element={<PropertyManagement />} />
                 <Route path="/postlisting" element={<PostListing />} />

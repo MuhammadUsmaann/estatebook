@@ -14,7 +14,7 @@ const SideBarRoutes = () => {
   const Routes = [
     {
       name: "Dashboard Overview ",
-      link: "/",
+      link: "/dashboard",
       visiblity: true,
       icon: <NavProfileIcon />
     },

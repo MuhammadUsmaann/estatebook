@@ -35,7 +35,7 @@ const AccountVerification = () => {
   return (
     <>
       <div className="row m-0" id="estatelogin">
-        <div className="p-left p-0">
+        <div className="p-left h-100 p-0">
           <div className="p-left-sub">
             <p className="text-skin font-56 font-weight-800 w-50 pb-3">
               2-Step <span className="text-light-black">Verification</span>
@@ -85,16 +85,16 @@ const AccountVerification = () => {
 
                   <button
                     type="submit"
-                    className="e-btn-style  bg-skin mt-5 text-white font-weight-600 w-100 ">
+                    className="e-btn-style mb-5  bg-skin mt-5 text-white font-weight-600 w-100 ">
                     Verify
                   </button>
                 </Form>
               )}
             </Formik>
 
-            {/* <p className="mt-5 text-light-black font-weight-500 copyright">
+            <p className="mt-5 text-light-black font-weight-500 copyright">
               © Copyright 2022 Estate Book. All Rights Reserved
-            </p> */}
+            </p>
           </div>
         </div>
         <div className="p-right  p-0">

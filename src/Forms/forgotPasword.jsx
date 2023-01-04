@@ -13,11 +13,11 @@ const ForgotPasword = () => {
   const code = new URLSearchParams(search).get("code");
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
-  useEffect(() => {
-    if (!code) {
-      navigate("/login");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!code) {
+  //     navigate("/login");
+  //   }
+  // }, []);
   const onSubmit = (values, props) => {
     setIsLoading(true);
     resetPasswordApi(values, code)
@@ -86,16 +86,16 @@ const ForgotPasword = () => {
 
                   <button
                     type="submit"
-                    className="e-btn-style bg-skin  text-white font-weight-600  w-100 ">
+                    className="e-btn-style bg-skin mb-48px  text-white font-weight-600  w-100 ">
                     Save
                   </button>
                 </Form>
               )}
             </Formik>
 
-            {/* <p className="pt-5 text-light-black font-weight-500 copyright">
+            <p className="pt-5 text-light-black font-weight-500 copyright">
               © Copyright 2022 Estate Book. All Rights Reserved
-            </p> */}
+            </p>
           </div>
         </div>
         <div className="p-right  p-0">

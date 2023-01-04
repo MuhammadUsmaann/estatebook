@@ -133,7 +133,7 @@ button {
   padding: 0px 60px 0 42px;
   background: #FFFFFF;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.05);
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .app-header .record-box {
@@ -196,7 +196,7 @@ li {
 }
 
 .w-max-content {
-  width: max-content;
+  width: max-content !important;
 }
 
 .gap-16 {
@@ -680,11 +680,12 @@ select {
   transform: translate3d(-112px, 53px, 0px) !important;
 }
 
-/* @media screen and (max-width:600px) {
-  .app-sidebar {
-    display: none;
-  }
-} */
+@media screen and (max-width:800px) {
+  .otp {
+      width: 30px !important;
+      height: 40px !important;
+    }
+}
 
 /* profile setting */
 @media screen and (max-width:767px) {
@@ -727,8 +728,8 @@ select {
   #postlisting .selectdiv {
     width: 100% !important;
   }
-}
 
+}
 @media screen and (max-width:570px) {
   .dashboard-home-svg {
     width: 200px !important;
@@ -762,4 +763,7 @@ select {
   border: 0px;
   padding: 40px;
   overflow: auto;
+}
+.logins-social span{
+width: 100%;
 }

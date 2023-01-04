@@ -11,7 +11,6 @@ const Sidebar = (props) => {
 
   return (
     <>
-      {isOpen &&
 
         <div className="app-sidebar d-md-flex d-none">
           <div className="w-100 mb-5 side-links">
@@ -29,7 +28,7 @@ const Sidebar = (props) => {
             <GotoIcon /> <span className="pl-2 font-18 font-weight-400">Go To Estatebook.com</span>
           </div>
         </div>
-      }
+      
       {
         isOpen &&
         <div className="app-sidebar d-md-none d-flex">

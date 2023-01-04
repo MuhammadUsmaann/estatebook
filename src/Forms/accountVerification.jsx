@@ -61,7 +61,7 @@ const AccountVerification = () => {
                       OTPLength={6}
                       otpType="number"
                       disabled={false}
-                      inputClassName="e-btn-style w-56px h-72px m-0 text-dark font-40 font-weight-600"
+                      inputClassName="e-btn-style otp w-56px h-72px m-0 text-dark font-40 font-weight-600"
                       className="justify-content-between"
                     />
                   </div>
@@ -78,7 +78,7 @@ const AccountVerification = () => {
                       OTPLength={6}
                       otpType="number"
                       disabled={false}
-                      inputClassName="e-btn-style w-56px h-72px m-0 text-dark font-40 font-weight-600"
+                      inputClassName="e-btn-style otp w-56px h-72px m-0 text-dark font-40 font-weight-600"
                       className="justify-content-between"
                     />
                   </div>

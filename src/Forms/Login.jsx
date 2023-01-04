@@ -1,7 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { loadGapiInsideDOM } from "gapi-script";
 import React, { useEffect, useState } from "react";
-import ReactFacebookLogin from "react-facebook-login";
+import FacebookLogin from "react-facebook-login";
 import GoogleLogin from "react-google-login";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -14,6 +14,7 @@ import { loginValidationSchema } from "../utils";
 import Loginmain from "../components/images/loginmain";
 
 import "./pform.css";
+import Facebook from "../components/images/facebook";
 const LoginPage = () => {
   useEffect(() => {
     (async () => {
@@ -171,7 +172,7 @@ const LoginPage = () => {
               </span>
             </div>
 
-            <div className="justify-content-between d-flex align-items-center text-light-black mb-5 mb-220px">
+            <div className="justify-content-between logins-social flex-md-row flex-column d-flex align-items-center text-light-black mb-5 ">
               <GoogleLogin
                 clientId="277094535108-is872kf6iqvfqkp8kk88v3pni5kp5nva.apps.googleusercontent.com"
                 render={(renderProps) => (
@@ -179,7 +180,7 @@ const LoginPage = () => {
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}
                     type="button"
-                    className="e-btn-style bg-white font-weight-600 w-100">
+                    className="e-btn-style mr-md-3 bg-white font-weight-600 w-100 mb-md-0 mb-2">
                     <GoogleIcon /> <span className="pl-2">Google</span>
                   </button>
                 )}
@@ -188,26 +189,31 @@ const LoginPage = () => {
                 onFailure={responseGoogleError}
                 cookiePolicy={"single_host_origin"}
               />
-              <ReactFacebookLogin
-                appId="680504097055422"
+              <FacebookLogin
+                appId="1088597931155576"
+                autoLoad={false}
+                fields="name,email,picture"
+                callback={responseFacebook}
+                cssClass=" d-flex justify-content-center  align-items-center e-btn-style bg-white font-weight-600 w-100"
+                icon={<span className="pr-2 w-max-content"><FacebookIcon /></span>}
+                textButton='Facebook'
+
+              />,
+              {/* <ReactFacebookLogin
+                appId="889699102378305"
                 callback={responseFacebook}
                 fields="name,email,picture"
-                // @ts-ignore
                 render={(renderProps) => (
                   <button
                     type="button"
                     onClick={renderProps.onClick}
                     className="e-btn-style mr-4 bg-white font-weight-600 w-100">
-                    <FacebookIcon /> <span className="pl-2">Facebook</span>
+                    <Facebook /> <span className="pl-2">Facebook</span>
                   </button>
-                )
-                }
-              />
+                )}
+              /> */}
               {/* <button className="e-btn-style mr-4 bg-white font-weight-600 w-100">
-                <FacebookIcon /> <span className="pl-2">Facebook</span>
-              </button>
-              <button className="e-btn-style bg-white font-weight-600 w-100">
-                <GoogleIcon /> <span className="pl-2">Google</span>
+                <Facebook /> <span className="pl-2">Facebook</span>
               </button> */}
             </div>
 

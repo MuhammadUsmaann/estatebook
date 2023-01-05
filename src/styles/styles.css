@@ -98,6 +98,9 @@ p {
 .main-content {
   grid-area: main-content;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer {
@@ -105,7 +108,9 @@ p {
 }
 
 .footer-div {
-    padding: 0px 60px 32px 60px;
+  padding: 20px 60px 20px 60px;
+  line-height: 20px;
+  background: #FFFFFF;
 }
 
 
@@ -133,12 +138,13 @@ button {
   padding: 0px 60px 0 42px;
   background: #FFFFFF;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.05);
-  /* z-index: 10; */
+  z-index: 10;
 }
 
 .app-header .record-box {
   height: 444px;
 }
+
 
 .app-header .selectdiv::after {
   top: 13px !important;
@@ -191,6 +197,10 @@ li {
   margin-bottom: 24px;
 }
 
+.mb-18 {
+  margin-bottom: 18px !important;
+}
+
 .mb-48px {
   margin-bottom: 48px;
 }
@@ -201,6 +211,10 @@ li {
 
 .gap-16 {
   gap: 16px !important;
+}
+
+.gap-8 {
+  gap: 8px !important;
 }
 
 .pad-40 {
@@ -413,6 +427,10 @@ select {
 }
 
 /* profile setting */
+#profilesetting .content-box {
+  padding: 40px 60px 56px 60px;
+}
+
 #profilesetting .nav-item a.active {
   display: flex;
   align-items: center;
@@ -480,6 +498,8 @@ select {
 }
 
 /* agants page */
+
+
 .grey-profile-box {
   width: 168px;
   height: 168px;
@@ -490,31 +510,45 @@ select {
   font-size: 16px;
 }
 
-#agentspage table thead tr th {
+table thead tr th {
   height: 64px;
   padding: 0px 21px !important;
   font-weight: 600;
 }
 
-#agentspage table tbody tr td {
-  height: 64px;
+table tbody tr td {
+  height: 64px !important;
   padding: 0px 21px !important;
   font-weight: 400;
 }
 
-#agentspage table thead th {
+table thead th {
   background-color: #FFF5E0;
 }
 
-#agentspage table tbody tr:nth-child(even) {
+table tbody tr:nth-child(even) {
   background-color: #FDFBF5;
 }
 
-#agentspage table tbody tr:nth-child(odd) {
+table tbody tr:nth-child(odd) {
   background-color: white;
 }
 
 /* propertymanagement */
+.edit-dropdown {
+  transform: translate3d(-160px, -60px, 0px) !important;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 8px 8px;
+  padding: 16px !important;
+  width: 124px;
+  border: 0 !important;
+}
+
+
+#propertymanagement .record-box {
+  height: 444px;
+}
 
 #propertymanagement .nav-item a.active {
   display: flex;
@@ -533,8 +567,37 @@ select {
 
 
 /* post listing */
+#postlisting #adinfo textarea {
+  height: 178px !important;
+  border: 1px solid #707070 !important;
+  padding: 6px 12px !important;
+  all: unset;
+}
+
+.border-dashed {
+  border-top: 1px dashed #DFDFDF;
+}
+
+.w-40 {
+  width: 40% !important;
+}
 
 #postlisting #myrecordTab .nav-item a.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  background-color: var(--skin-brown);
+  border-radius: 8px;
+  padding: 16px 30px;
+  color: var(--white);
+  border-color: var(--skin-brown);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+#postlisting #bedroomsF .nav-item a.active {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -564,6 +627,21 @@ select {
 }
 
 #postlisting #mypropertytype .nav-item a.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  background-color: var(--skin-brown);
+  border-radius: 8px;
+  padding: 16px 30px;
+  color: var(--white);
+  border-color: var(--skin-brown);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+#postlisting #adinfo .nav-item a.active {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -682,14 +760,18 @@ select {
 
 @media screen and (max-width:800px) {
   .otp {
-      width: 30px !important;
-      height: 40px !important;
-    }
+    width: 30px !important;
+    height: 40px !important;
+  }
 }
 
 /* profile setting */
 @media screen and (max-width:767px) {
-  .profile-setting-detail div {
+  .profile-setting-detail .width-div {
+    width: 100% !important;
+  }
+
+  .width-div {
     width: 100% !important;
   }
 
@@ -724,12 +806,12 @@ select {
     top: 100px;
   }
 
-
   #postlisting .selectdiv {
     width: 100% !important;
   }
 
 }
+
 @media screen and (max-width:570px) {
   .dashboard-home-svg {
     width: 200px !important;
@@ -737,6 +819,10 @@ select {
   }
 
   .profile-setting-detail {
+    padding: 30px !important;
+  }
+
+  #companysetting .content-box {
     padding: 30px !important;
   }
 
@@ -751,6 +837,16 @@ select {
   .font-18 {
     font-size: 16px !important;
   }
+
+  .content-page {
+    padding: 0 40px 40px 40px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .col-eq-height {
+    height: max-content !important;
+  }
 }
 
 .customModal {
@@ -764,6 +860,37 @@ select {
   padding: 40px;
   overflow: auto;
 }
-.logins-social span{
-width: 100%;
+
+.logins-social span {
+  width: 100%;
+}
+
+/* Company settings */
+.col-eq-height {
+  height: 100% ;}
+
+.upload-image-box {
+  border: 1px dashed #DFDFDF;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.p30px {
+  padding: 30px !important;
+}
+
+.pb56px {
+  padding-bottom: 56px;
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+#companysetting .content-box {
+  padding: 40px 60px 56px 60px;
+}
+
+.flex-wrap {
+  flex-wrap: nowrap;
 }

@@ -6,6 +6,7 @@ import NavProfileIcon from '../../../components/Icons/navprofileIcon';
 import PostlistingIcon from '../../../components/Icons/postlistingIcon';
 import ProfileSettingIcon from '../../../components/Icons/profilesettingIcon';
 import PropertyManagementIcon from '../../../components/Icons/propertymanagementIcon';
+import SettingsIcon from '../../../components/Icons/settingsIcon';
 
 const SideBarRoutes = () => {
   // const { IsUserLoggedIn, AgentRole, SuperAdmin, UserDetails } = Hooks();
@@ -41,7 +42,15 @@ const SideBarRoutes = () => {
       link: "/profilesettings",
       icon: <ProfileSettingIcon />,
       visiblity: true,
+    }
+    ,
+    {
+      name: "Company Settings",
+      link: "/companysettings",
+      icon: <SettingsIcon />,
+      visiblity: true,
     },
+
     {
       name: "Agents",
       link: "/agents",

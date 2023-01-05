@@ -85,7 +85,7 @@ const AccountVerification = () => {
 
                   <button
                     type="submit"
-                    className="e-btn-style mb-5  bg-skin mt-5 text-white font-weight-600 w-100 ">
+                    className="e-btn-style mb-220px  bg-skin mt-5 text-white font-weight-600 w-100 ">
                     Verify
                   </button>
                 </Form>

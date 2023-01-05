@@ -14,7 +14,7 @@ const Profile = () => {
     };
     return (
         <div className='profile-setting-detail d-flex justify-content-center align-items-center'>
-            <div className='w-75'>
+            <div className='w-75 width-div'>
                 <div className='d-flex flex-xl-row flex-column justify-content-between align-items-xl-center'>
                     <div className='d-flex flex-sm-row flex-column justify-between mb-xl-0 mb-4 align-items-sm-center align-items-start
                     '>

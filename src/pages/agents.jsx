@@ -23,6 +23,9 @@ const customStyles = {
         overflow: 'auto'
 
     },
+    overlay: {
+        zIndex: '10'
+    },
 };
 const tableData = [
     {
@@ -277,6 +280,7 @@ const Agents = () => {
                 onRequestClose={closeModal}
                 style={customStyles}
                 contentLabel="Example Modal"
+
             >
                 <div className='d-flex justify-content-between align-items-center '>
                     <p className='font-24 font-weight-600 text-light-black'>Add<span className='text-skin'> New Agent</span></p>

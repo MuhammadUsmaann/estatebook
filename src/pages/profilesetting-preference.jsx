@@ -4,7 +4,7 @@ const Preferences = () => {
 
     return (
         <div className='profile-setting-detail d-flex justify-content-center align-items-center'>
-            <div className='w-75'>
+            <div className='w-75 width-div'>
                 <form>
                     <label className="d-flex align-items-center cr-p w-100 justify-content-between">
                         <div>

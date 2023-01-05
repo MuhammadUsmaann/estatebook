@@ -4,7 +4,7 @@ const ChangePassword = () => {
 
     return (
         <div className='profile-setting-detail d-flex justify-content-center align-items-center'>
-            <div className='w-50'>
+            <div className='w-50 width-div'>
 
                 <form>
                     <div className=''>

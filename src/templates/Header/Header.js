@@ -51,7 +51,7 @@ export default function TemplatesHeader(props) {
               <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a className="dropdown-item d-flex align-items-center justify-content-center border-bottom pb-2 font-18 font-weight-400" >Edit Template</a>
                 <a className="dropdown-item font-18 font-weight-400 pt-2" >
-                  <p className='d-md-none d-flex align-items-center justify-content-center'> <GobackIcon /><span className=' pl-3'>Go Back</span></p>
+                  <p className='d-md-none d-flex align-items-center justify-content-center' onClick={() => navigate(-1)}> <GobackIcon /><span className=' pl-3'>Go Back</span></p>
                 </a>
               </div>
             </div>

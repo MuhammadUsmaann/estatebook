@@ -12,7 +12,7 @@ const defaultMapOptions = {
 };
 
 
-const MyMapComponent = withScriptjs(
+export const MyMapComponent = withScriptjs(
     withGoogleMap(props => (
         <GoogleMap
             defaultZoom={11}
@@ -106,7 +106,7 @@ const TemplateMain = () => {
                     <PropertiesIcon />
                     <span className='pl-3'>40 Properties</span>
                 </div>
-                <div className='font-18 font-weight-400 d-flex align-items-center'>
+                <div className='font-18 pb-3 font-weight-400 d-flex align-items-center'>
                     <BrownlocationIcon />
                     <span className='pl-3'>Block cc, DHA Phase 6, Lahore</span>
                 </div>

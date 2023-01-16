@@ -2,7 +2,7 @@ import React from 'react'
 
 const Propertylist = () => {
     return (
-        <svg width={338} height={338}  fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg width={338} height={338} className="responsive-svg"  fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <rect width={338} height={338} rx={8} fill="white" />
             <rect width={338} height={338} rx={8} fill="url(#pattern1122)" />
             <defs>

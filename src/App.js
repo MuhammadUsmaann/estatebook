@@ -7,12 +7,11 @@ import UserLayout from './Dashboard/UserLayout';
 import UserRouter from './Dashboard/Router';
 import { useLocation } from 'react-router-dom';
 import LandingPage from './landing page';
-import LandingHeader from './landing page/header/landingHeader';
 import PreDefinedTemplates from './templates';
 function App() {
   const login = ['/login', '/signup', '/accountverification', '/forgotpassword']
-  const dashboard = ['/dashboard', '/postlisting', '/propertymanagement', '/customprofilebuilder', '/profilesettings', '/agents']
-  const templates = ['/properties', '/featuredproperties']
+  const dashboard = ['/dashboard', '/postlisting', '/propertymanagement', '/customprofilebuilder', '/profilesettings', '/companysettings', '/agents']
+  const templates = ['/template1', '/template2', '/template3', '/template4', '/template5']
 
   const location = useLocation();
   console.log(location.pathname);

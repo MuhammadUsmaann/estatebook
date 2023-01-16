@@ -7,25 +7,25 @@ import { NavLink } from 'react-router-dom'
 
 const totals = [
     {
-        link: '/properties',
+        link: '/',
         text: 'Total Properties Listed',
         number: 40,
         icon: <TotalProperties />
     },
     {
-        link: '/featuredproperties',
+        link: '/',
         text: 'Featured Properties',
         number: 20,
         icon: <FeaturedImage />
     },
     {
-        link: '/soldproperties',
+        link: '/',
         text: 'Properties Sold',
         number: 129,
         icon: <Soldproperty />
     },
     {
-        link: '/agents',
+        link: '/',
         text: 'Total Agents',
         number: 54,
         icon: <AgentsImage />
@@ -38,7 +38,7 @@ const TemplateTotals = () => {
                 totals.map((data, index) => {
                     return (
                         <div key={index} className='col-xl-3 col-md-6 col-12 mb-xl-0 mb-3 p-0 h-100' >
-                            <NavLink to={data.link} className='subdiv text-light-black d-flex justify-content-start align-items-center mr-md-3'>
+                            <NavLink className='subdiv text-light-black d-flex justify-content-start align-items-center mr-md-3'>
                                 <div className='p-4 bg-skin-brown rounded-6 mr-3'>
                                     {data.icon}
                                 </div>

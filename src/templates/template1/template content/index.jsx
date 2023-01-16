@@ -1,12 +1,12 @@
 import React from 'react'
-import AllAgentsIcon from '../../components/Icons/allAgentsICon'
-import FilterIcon from '../../components/Icons/filterIcon'
-import PropertiesIcon from '../../components/Icons/propertiesIcon'
-import RightArrowsIcon from '../../components/Icons/rightArrowsIcon'
-import Agent from '../../components/images/agent'
-import Propertylist from '../../components/images/propertylist'
-import AgentsCard from './agentsCard'
-import PropertyCard from './propertyCard'
+import AllAgentsIcon from '../../../components/Icons/allAgentsICon'
+import FilterIcon from '../../../components/Icons/filterIcon'
+import PropertiesIcon from '../../../components/Icons/propertiesIcon'
+import RightArrowsIcon from '../../../components/Icons/rightArrowsIcon'
+import Agent from '../../../components/images/agent'
+import Propertylist from '../../../components/images/propertylist'
+import AgentsCard from '../template content/agentsCard'
+import PropertyCard from '../template content/propertyCard'
 const propertieslist = [
     {
         picture: <Propertylist />,
@@ -321,7 +321,7 @@ const TemplateContent = () => {
                                         bed={list.bed}
                                         wroom={list.wroom}
                                         height={list.height}
-                                        addedtime={list.text}
+                                        addedtime={list.addedtime}
                                         picture={list.picture}
                                         index={index}
                                     />

@@ -1,15 +1,19 @@
 import React from 'react'
-import RightArrowsIcon from '../../components/Icons/rightArrowsIcon'
-import Agent from '../../components/images/agent'
-import Section3card1 from '../../components/images/section3card1'
-import Section3card2 from '../../components/images/section3card2'
-import Section3card3 from '../../components/images/section3card3'
-import Section3card4 from '../../components/images/section3card4'
-import Section3card5 from '../../components/images/section3card5'
-import Section3card6 from '../../components/images/section3card6'
-import Section3card7 from '../../components/images/section3card7'
-import Section3card8 from '../../components/images/section3card8'
-import AgentsCard from '../template content/agentsCard'
+import BathroomIcon from '../../../components/Icons/bathroomIcon'
+import BedIcon from '../../../components/Icons/bedIcon'
+import GraphicIcon from '../../../components/Icons/graphicIcon'
+import HeightIcon from '../../../components/Icons/heightIcon'
+import RightArrowsIcon from '../../../components/Icons/rightArrowsIcon'
+import Agent from '../../../components/images/agent'
+import Section3card1 from '../../../components/images/section3card1'
+import Section3card2 from '../../../components/images/section3card2'
+import Section3card3 from '../../../components/images/section3card3'
+import Section3card4 from '../../../components/images/section3card4'
+import Section3card5 from '../../../components/images/section3card5'
+import Section3card6 from '../../../components/images/section3card6'
+import Section3card7 from '../../../components/images/section3card7'
+import Section3card8 from '../../../components/images/section3card8'
+import AgentsCard from '../../template1/template content/agentsCard'
 
 const agents = [
     {
@@ -154,22 +158,34 @@ const FeaturedProperties = () => {
         <div className='featured-properties'>
             {/* featured */}
             <p className='font-36 font-weight-700 text-light-black'>Featured <span className='text-skin-brown'>Properties</span></p>
-            <div className='row m-0'>
+            <div className='row m-0 '>
                 {
                     featuredpropertieslist.map((cards, index) => {
                         return (
-                            <div className='col-lg-3 col-sm-6 col-12 p-0 mb-5' key={index}>
-                                <div className='mr-sm-4 section3card text-light-black'>
-                                    <div className='w-100 pb-4'>
+                            <div className='col-xl-3 col-md-6 col-12 p-0 mb-5 row1featured-properties' key={index}>
+                                <div className='mr-md-4 section3card text-light-black'>
+                                    <div className='w-100 pb-4 position-relative'>
+                                        <p className='featured-btn text-white'>Featured</p>
                                         {cards.picture}
+                                        <p className='graphic-btn text-white'><GraphicIcon /><span className='pl-2'>20</span></p>
+
                                     </div>
                                     <p className='mb-5 font-14 font-weight-500 text-light-grey'>{cards.addedtime}</p>
                                     <p className='font-20 font-weight-600 mb-4 mt-2'>{cards.text}</p>
                                     <p className='font-18 font-weight-400 mb-3'>{cards.location}</p>
                                     <div className='d-flex align-items-center justify-content-start gap-16 font-18 font-weight-600 mb-4'>
-                                        <p>{cards.bed}</p>
-                                        <p>{cards.wroom}</p>
-                                        <p>{cards.height}</p>
+                                        <div className='d-flex align-items-center'>
+                                            <BedIcon />
+                                            <p className='pl-2'>{cards.bed}</p>
+                                        </div>
+                                        <div className='d-flex align-items-center'>
+                                            <BathroomIcon />
+                                            <p className='pl-2'>{cards.wroom}</p>
+                                        </div>
+                                        <div className='d-flex align-items-center'>
+                                            <HeightIcon />
+                                            <p className='pl-2'>{cards.height}</p>
+                                        </div>
                                     </div>
                                     <p className='font-36 font-weight-600 mb-lg-4 mb-0 text-light-black'><span className='text-skin-brown'>AED </span>{cards.price}</p>
                                     <div className='d-flex align-items-sm-center justify-content-start flex-sm-row flex-column gap-16'>
@@ -186,22 +202,34 @@ const FeaturedProperties = () => {
 
             {/* others */}
             <p className='font-36 font-weight-700 text-light-black'>Others <span className='text-skin-brown'>Properties</span></p>
-            <div className='row m-0'>
+            <div className='row m-0 '>
                 {
                     otherspropertieslist.map((cards, index) => {
                         return (
-                            <div className='col-lg-3 col-sm-6 col-12 p-0 mb-5' key={index}>
-                                <div className='mr-sm-4 section3card text-light-black'>
-                                    <div className='w-100 pb-4'>
+                            <div className='col-xl-3 col-md-6 col-12 p-0 mb-5 row2featured-properties' key={index}>
+                                <div className='mr-md-4 section3card text-light-black'>
+                                    <div className='w-100 pb-4 position-relative'>
+                                        <p className='featured-btn text-white'>Featured</p>
                                         {cards.picture}
+                                        <p className='graphic-btn text-white'><GraphicIcon /><span className='pl-2'>20</span></p>
+
                                     </div>
                                     <p className='mb-5 font-14 font-weight-500 text-light-grey'>{cards.addedtime}</p>
                                     <p className='font-20 font-weight-600 mb-4 mt-2'>{cards.text}</p>
                                     <p className='font-18 font-weight-400 mb-3'>{cards.location}</p>
                                     <div className='d-flex align-items-center justify-content-start gap-16 font-18 font-weight-600 mb-4'>
-                                        <p>{cards.bed}</p>
-                                        <p>{cards.wroom}</p>
-                                        <p>{cards.height}</p>
+                                        <div className='d-flex align-items-center'>
+                                            <BedIcon />
+                                            <p className='pl-2'>{cards.bed}</p>
+                                        </div>
+                                        <div className='d-flex align-items-center'>
+                                            <BathroomIcon />
+                                            <p className='pl-2'>{cards.wroom}</p>
+                                        </div>
+                                        <div className='d-flex align-items-center'>
+                                            <HeightIcon />
+                                            <p className='pl-2'>{cards.height}</p>
+                                        </div>
                                     </div>
                                     <p className='font-36 font-weight-600 mb-lg-4 mb-0 text-light-black'><span className='text-skin-brown'>AED </span>{cards.price}</p>
                                     <div className='d-flex align-items-sm-center justify-content-start flex-sm-row flex-column gap-16'>
@@ -228,7 +256,7 @@ const FeaturedProperties = () => {
                 {agents.map((agent, index) => {
                     return (
                         <div className='col-lg-3 col-md-6 col-12 p-0 all-agents'>
-                            <div className='section3card mr-3'>
+                            <div className='section3card mr-md-3'>
                                 <AgentsCard
                                     key={index}
                                     location={agent.location}

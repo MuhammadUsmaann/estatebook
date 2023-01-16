@@ -101,6 +101,22 @@ const section5blog = [
         picture: <Section3card8 />,
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing ....'
     },
+    {
+        picture: <Section3card4 />,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing ....'
+    },
+    {
+        picture: <Section3card5 />,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing ....'
+    },
+    {
+        picture: <Section3card6 />,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing ....'
+    },
+    {
+        picture: <Section3card7 />,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing ....'
+    },
 ]
 
 const ceoCLub = [
@@ -221,7 +237,8 @@ const LandingContent = () => {
                                 return (
                                     <div className='col-lg-3 col-sm-6 col-12 p-0 mb-5' key={index}>
                                         <div className='mr-sm-4 section3card text-light-black'>
-                                            <div className='w-100 pb-4'>
+                                            <div className='w-100 pb-4 position-relative'>
+                                                <p className='featured-btn text-white'>Featured</p>
                                                 {cards.picture}
                                             </div>
                                             <p className='pb-3 font-24 font-weight-700'>{cards.text}</p>
@@ -282,11 +299,11 @@ const LandingContent = () => {
                         <div className='skin-line m-auto '></div>
                     </div>
                     <div className='row m-0 mt-5'>
-                        <div className='col-md-4 col-12 h-100'>
-                            <div className='section3card mb-md-0 mb-4'>
+                        <div className='col-lg-4 col-12 h-100'>
+                            <div className='section3card mb-lg-0 mb-4'>
                                 <div className='d-flex w-100 justify-content-between mb-48px pb-4 align-items-center border-bottom border-skin'>
                                     <p className='font-24 font-weight-700 text-light-black  w-50 '>CEO’s Club</p>
-                                    <div className='d-flex align-items-end text-skin-brown font-16 font-weight-600'>
+                                    <div className='d-flex align-items-center text-skin-brown font-16 font-weight-600'>
                                         <span className='pr-2'>View All</span>
                                         <RightArrowsIcon />
                                     </div>
@@ -306,11 +323,11 @@ const LandingContent = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-8 col-12 h-100'>
+                        <div className='col-lg-8 col-12 h-100'>
                             <div className='section3card'>
                                 <div className=' d-flex w-100 justify-content-between mb-48px pb-4 align-items-center border-bottom border-skin'>
                                     <p className='font-24 font-weight-700 text-light-black w-50 '>Blogs</p>
-                                    <div className='d-flex align-items-end text-skin-brown font-16 font-weight-600'>
+                                    <div className='d-flex align-items-center text-skin-brown font-16 font-weight-600'>
                                         <span className='pr-2'>View All</span>
                                         <RightArrowsIcon />
                                     </div>
@@ -321,7 +338,8 @@ const LandingContent = () => {
                                             return (
                                                 <div className='col-xl-3 col-lg-4 col-sm-6 col-12 p-0 mb-3' key={index}>
                                                     <div className='mr-4 text-light-black'>
-                                                        <div className='w-100 pb-2'>
+                                                        <div className='w-100 pb-2 position-relative'>
+                                                            <p className='featured-btn text-white'>Featured</p>
                                                             {cards.picture}
                                                         </div>
                                                         <p className='pb-2 font-14 font-weight-400'>{cards.text}</p>

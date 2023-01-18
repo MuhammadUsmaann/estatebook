@@ -158,7 +158,7 @@ const Template5Content = () => {
             <div className='row m-0 '>
                 <div className='col-lg-8 col-12 mb-lg-0 mb-4 p-0 h-100'>
                     <div className='column-sub mr-lg-4 '>
-                        <div className='d-flex py-3 mx-4 align-items-sm-center align-items-start justify-content-between flex-sm-row flex-column mb-4 border-bottom border-skin'>
+                        <div className='d-flex py-3 mx-4 align-items-sm-center align-items-start justify-content-between flex-sm-row flex-column mb-4  bb-2px border-skin'>
                             <div className='d-flex align-items-center'>
                                 <PropertiesIcon />
                                 <p className='font-24 font-weight-700 pl-2 text-light-black'>Properties List</p>
@@ -195,7 +195,7 @@ const Template5Content = () => {
                 </div>
                 <div className='col-lg-4 col-12 p-0 h-100'>
                     <div className='column-sub px-4 pb-4 mb-4'>
-                        <div className='px-0 p16-24 mb-4 border-bottom border-skin w-100'>
+                        <div className='px-0 p16-24 mb-4  bb-2px border-skin w-100'>
                             <button className='py-2 text-light-black d-flex align-items-center font-18 font-weight-400'>
                                 <CompanyInfo />
                                 <p className='font-24 font-weight-700 pl-2'>Company Info</p>

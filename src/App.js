@@ -11,7 +11,7 @@ import PreDefinedTemplates from './templates';
 function App() {
   const login = ['/login', '/signup', '/accountverification', '/forgotpassword']
   const dashboard = ['/dashboard', '/postlisting', '/propertymanagement', '/customprofilebuilder', '/profilesettings', '/companysettings', '/agents']
-  const templates = ['/template1', '/template2', '/template3', '/template4', '/template5']
+  const templates = ['/template1', '/template2', '/template3', '/template4', '/template5', '/template6', '/selecttemplate','/selecttemplate/billing']
 
   const location = useLocation();
   console.log(location.pathname);

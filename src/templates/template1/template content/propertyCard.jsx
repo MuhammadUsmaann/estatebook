@@ -33,9 +33,9 @@ const PropertyCard = (props) => {
                             <p className='pl-2'>{height}</p>
                         </div>
                     </div>
-                    <p className='mb-5 font-14 font-weight-500 text-light-grey'>{addedtime}</p>
+                    <p className='mb-4 font-14 font-weight-500 text-light-grey'>{addedtime}</p>
                 </div>
-                <div className='d-flex align-items-sm-center justify-content-start flex-sm-row flex-column gap-16'>
+                <div className='d-flex align-items-sm-center justify-content-start flex-sm-row flex-column gap-16 mt-1'>
                     <button className='btn-brown-bg w-160px'>Call</button>
                     <button className='premium-btn font-16 font-weight-600 h-48px w-160px'>Email</button>
 

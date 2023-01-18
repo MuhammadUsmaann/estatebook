@@ -14,6 +14,7 @@ import santanaImage from '../../components/images/santanaImage.png'
 import Premiumicon from '../../components/Icons/premiumicon'
 import { MyMapComponent } from '../templatesmain'
 import CompanyInfo from '../../components/Icons/companyInfo'
+
 const propertieslist = [
     {
         picture: <Propertylist />,
@@ -70,7 +71,7 @@ const propertieslist = [
         addedtime: 'Added 4 hours ago',
         height: '5000'
     },
-   
+
 ]
 const agents = [
     {
@@ -150,15 +151,37 @@ const agents = [
         location: 'RC Real Estate Pty Ltd',
         picture: <Agent />
     },
-    
+
 ]
-const Template4Content = () => {
+const Template6Content = () => {
     return (
         <div className='template-content'>
+            <div className='d-flex flex-md-row flex-column align-items-md-end align-items-start template6section1'>
+                <img src={santanaImage} className="teamname-s1"/>
+                <div className='pl-md-5 d-flex flex-column align-items-start'>
+                    <div className='d-flex align-items-lg-center pb-2 align-items-start flex-lg-row flex-column justify-content-between'>
+                        <p className='font-36 font-weight-700  mr-5'> Santana Team</p>
+                        <button className='premium-btn ml-xl-5 p-3 mr-3 font-12 font-weight-600 mb-sm-0 mb-3'> <Premiumicon /><span className='pl-1'>Verified Company</span></button>
+
+                    </div>
+                    <div className='d-flex align-items-lg-start align-items-start align-items-sm-center  gap-16 flex-lg-column flex-sm-row flex-column'>
+                        <div className='font-18  font-weight-400 d-flex align-items-center'>
+                            <BrownlocationIcon />
+                            <span className='pl-3'>Block cc, DHA Phase 6, Lahore</span>
+                        </div>
+                        <div className='font-18 font-weight-400 d-flex align-items-center'>
+                            <PropertiesIcon />
+                            <span className='pl-3'>40 Properties</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <div className='row m-0 '>
                 <div className='col-lg-8 col-12 mb-lg-0 mb-4 p-0 h-100'>
                     <div className='column-sub mr-lg-4 '>
-                        <div className='d-flex py-3 mx-4 align-items-sm-center align-items-start justify-content-between flex-sm-row flex-column mb-4  bb-2px border-skin'>
+                        <div className='d-flex py-3 mx-4 align-items-sm-center align-items-start justify-content-between flex-sm-row flex-column mb-4 bb-2px border-skin'>
                             <div className='d-flex align-items-center'>
                                 <PropertiesIcon />
                                 <p className='font-24 font-weight-700 pl-2 text-light-black'>Properties List</p>
@@ -195,7 +218,7 @@ const Template4Content = () => {
                 </div>
                 <div className='col-lg-4 col-12 p-0 h-100'>
                     <div className='column-sub px-4 pb-4 mb-4'>
-                        <div className='px-0 p16-24 mb-4  bb-2px border-skin w-100'>
+                        <div className='px-0 p16-24 mb-4 bb-2px border-skin w-100'>
                             <button className='py-2 text-light-black d-flex align-items-center font-18 font-weight-400'>
                                 <CompanyInfo />
                                 <p className='font-24 font-weight-700 pl-2'>Company Info</p>
@@ -292,4 +315,4 @@ const Template4Content = () => {
     )
 }
 
-export default Template4Content
+export default Template6Content

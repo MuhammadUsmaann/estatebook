@@ -3,7 +3,7 @@ import Buildingimg from '../../components/images/buildingsection.png'
 const BuildingSectionOne = () => {
     return (
         <div className=''>
-            <img src={Buildingimg} />
+            <img src={Buildingimg} className="building-section"/>
         </div>
     )
 }

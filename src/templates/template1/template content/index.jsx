@@ -300,7 +300,7 @@ const TemplateContent = () => {
             <div className='row m-0 '>
                 <div className='col-lg-8 col-12 mb-lg-0 mb-4 p-0 h-100'>
                     <div className='column-sub mr-lg-4'>
-                        <div className='d-flex p16-24 align-items-sm-center align-items-start justify-content-between flex-sm-row flex-column mb-4 border-bottom border-skin'>
+                        <div className='d-flex p16-24 mx-4 px-0 align-items-sm-center align-items-start justify-content-between flex-sm-row flex-column mb-4 bb-2px border-skin'>
                             <div className='d-flex align-items-center'>
                                 <PropertiesIcon />
                                 <p className='font-24 font-weight-700 pl-2'>Properties List</p>
@@ -337,7 +337,7 @@ const TemplateContent = () => {
                 </div>
                 <div className='col-lg-4 col-12 p-0 h-100'>
                     <div className='column-sub'>
-                        <div className=' p16-24 mb-4 border-bottom border-skin d-flex w-100 justify-content-between align-items-center'>
+                        <div className=' p16-24 mx-4 px-0 mb-4  bb-2px border-skin d-flex justify-content-between align-items-center'>
                             <div className='d-flex align-items-center font-18 font-weight-400'>
                                 <AllAgentsIcon />
                                 <p className='font-24 font-weight-700 pl-2'>All Agents</p>

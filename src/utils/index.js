@@ -43,6 +43,7 @@ export const resetPasswordValidationSchema = Yup.object().shape({
 
 
 export const loginValidationSchema = Yup.object().shape({
+    fname: Yup.string().required('First Name is Required'),
     userEmailPhone: Yup.string().required('This Field  is Required'),
     password: Yup.string()
         .min(8, 'Password minimum length should be 8')
@@ -163,3 +164,28 @@ export const FormDataMultipleFiles = (Data) => {
     });
     return formData;
 }
+
+export const formDetail = Yup.object().shape({
+    // name: Yup.string().required('Name is Required'),
+    fname: Yup.string().required('First Name is Required'),
+    lname: Yup.string().required('Last Name is Required'),
+    companyname: Yup.string().required('Company Name is Required'),
+    // email: Yup.string().email('Enter valid email').required('Email is Required'),
+    companyemail: Yup.string().email('Enter valid email').required('Email is Required'),
+    country: Yup.string().required('Owner Name is Required'),
+    city: Yup.string().required('address is Required'),
+    address: Yup.string().required('Address is Required'),
+    mobphone: Yup.string().min(3, 'Minimum Length Should Be 3').required('Phone is Required'),
+
+});
+
+export const billingValidationSchema = Yup.object().shape({
+    fname: Yup.string().required('First Name is Required'),
+    lname: Yup.string().required('Last Name is Required'),
+    companyname: Yup.string().required('Company Name is Required'),
+    companyemail: Yup.string().email('Enter valid email').required('Email is Required'),
+    // country: Yup.string().required('Owner Name is Required'),
+    // city: Yup.string().required('address is Required'),
+    address: Yup.string().required('Address is Required'),
+    // mobphone: Yup.string().min(3, 'Minimum Length Should Be 3').required('Phone is Required'),
+});

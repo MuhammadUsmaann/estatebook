@@ -1,3 +1,4 @@
+import { data } from "jquery";
 import { api } from "./../interceptor/interceptor";
 // var moment = require("moment-timezone");
 export const API_URL = process.env.REACT_APP_API_URL;
@@ -17,7 +18,6 @@ export const userLoginApi = async (Data) => {
 
 export const userRegisterApi = async (Data) => {
   const res = await api.post("/register", Data);
-
   return res;
 };
 

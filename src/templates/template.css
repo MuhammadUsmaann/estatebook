@@ -315,7 +315,7 @@
         border-radius: 8px !important;
     }
 
-    
+
 
 }
 
@@ -405,9 +405,43 @@
 .p-30px {
     padding: 30px !important;
 }
-.mb-30px{
+
+.mb-30px {
     margin-bottom: 30px !important;
 }
-a:hover{
+
+a:hover {
     color: inherit !important;
+}
+
+.w-118px {
+    width: 118px !important;
+}
+
+.is-valid {
+    outline: 2px solid red !important;
+}
+
+#billingdetail .ReactModal__Content {
+    overflow-y: auto !important;
+    width: 780px !important;
+    height: 784px !important;
+    border-radius: 0 !important;
+    top: 100px;
+}
+
+.px-8rem {
+    padding: 0 8rem !important;
+}
+
+@media screen and (max-width:768px) {
+    .px-8rem {
+        padding: 0 4rem !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .px-8rem {
+        padding: 0 !important;
+    }
 }

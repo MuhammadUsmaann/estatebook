@@ -126,6 +126,7 @@ const Signup = () => {
               initialValues={initialValues}
               validationSchema={registerValidationSchema}
               onSubmit={onSubmit}>
+              
               {({ touched, errors, isSubmitting, values, setFieldValue }) => (
                 <Form action="" className="text-light-black">
                   <div className="d-flex flex-column mb-3">

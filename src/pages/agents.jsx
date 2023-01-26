@@ -247,13 +247,13 @@ const Agents = () => {
                                         <td>
                                             <Agent />
                                         </td>
-                                        <td>
+                                        <td className='min-width-160'>
                                             {data.fullName}
                                         </td>
-                                        <td>
+                                        <td >
                                             {data.agentId}
                                         </td>
-                                        <td>
+                                        <td >
                                             {data.email}
                                         </td>
                                         <td>
@@ -287,81 +287,98 @@ const Agents = () => {
                     <button onClick={closeModal}><CloseIcon /></button>
                 </div>
                 <div className='horizontal-line my-4'></div>
-                <div className='pt-md-5 d-flex flex-md-row flex-column justify-content-between'>
-                    <div className='pr-4 mb-md-0 mb-3'>
-                        <div className='mb-md-5 mb-3 bg-light-grey rounded-8 d-flex justify-content-center align-items-center grey-profile-box'>
-                            <PersonIcon />
+                {/* <div className='pt-md-5 d-flex flex-md-row flex-column justify-content-between'> */}
+                {/* <label>
+                        <input type='file' className='d-none' />
+                        <div className='pr-4 mb-md-0 mb-3'>
+                            <div className='mb-md-5 mb-3 bg-light-grey rounded-8 d-flex justify-content-center align-items-center grey-profile-box'>
+                                <PersonIcon />
+                            </div>
+                            <button className='btn-brown-outline'>Upload Picture</button>
                         </div>
-                        <button className='btn-brown-outline'>Upload Picture</button>
-                    </div>
-                    <form>
-                        <div className='d-flex flex-md-row flex-column justify-content-between mb-4 align-items-center'>
-                            <div className="d-flex flex-column w-100 mb-md-0 mb-4 mr-md-3">
-                                <label
-                                    className="font-16 font-weight-600 pb-2 "
-                                    htmlFor="name">
-                                    Full Name
-                                </label>
-                                <input type="text" required placeholder='Enter Full Name' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                    </label> */}
+                <form onSubmit={(e) => { e.preventDefault() }}>
+                    <div className='pt-md-5 d-flex flex-md-row flex-column justify-content-between'>
+                        <label className=''>
+                            <input type='file' className='d-none' />
+                            <div className='pr-4 mb-md-0 mb-3 d-flex flex-column justify-content-between h-100'>
+                                <div className='mb-md-5 mb-3 bg-light-grey rounded-8 d-flex justify-content-center align-items-center grey-profile-box'>
+                                    <PersonIcon />
+                                </div>
+                                <button className='btn-brown-outline w-max-content'>Upload Picture</button>
                             </div>
-                            <div className="d-flex flex-column w-100">
-                                <label
-                                    className="font-16 font-weight-600 pb-2 "
-                                    htmlFor="email">
-                                    Agent ID
-                                </label>
-                                <input required placeholder='Enter Agent ID' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                        </label>
+                        <div>
+                            <div className='d-flex flex-md-row flex-column justify-content-between mb-4 align-items-center'>
+                                <div className="d-flex flex-column w-100 mb-md-0 mb-4 mr-md-3">
+                                    <label
+                                        className="font-16 font-weight-600 pb-2 "
+                                        htmlFor="name">
+                                        Full Name
+                                    </label>
+                                    <input type="text" required placeholder='Enter Full Name' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                                </div>
+                                <div className="d-flex flex-column w-100">
+                                    <label
+                                        className="font-16 font-weight-600 pb-2 "
+                                        htmlFor="email">
+                                        Agent ID
+                                    </label>
+                                    <input required placeholder='Enter Agent ID' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                                </div>
                             </div>
-                        </div>
-                        <div className='d-flex flex-md-row flex-column justify-content-between mb-4 align-items-center'>
-                            <div className="d-flex flex-column w-100  mb-md-0 mb-4 mr-md-3">
-                                <label
-                                    className="font-16 font-weight-600 pb-2 "
-                                    htmlFor="email">
-                                    Email
-                                </label>
-                                <input required type='email' placeholder='Enter Email Address' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                            <div className='d-flex flex-md-row flex-column justify-content-between mb-4 align-items-center'>
+                                <div className="d-flex flex-column w-100  mb-md-0 mb-4 mr-md-3">
+                                    <label
+                                        className="font-16 font-weight-600 pb-2 "
+                                        htmlFor="email">
+                                        Email
+                                    </label>
+                                    <input required type='email' placeholder='Enter Email Address' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                                </div>
+                                <div className="d-flex flex-column w-100">
+                                    <label
+                                        className="font-16 font-weight-600 pb-2 "
+                                        htmlFor="email">
+                                        Mobile No.
+                                    </label>
+                                    <PhoneInput
+                                        onChange={(mobphone) => handleChangeMob(mobphone)}
+                                        specialLabel={""}
+                                        disableDropdown={false}
+                                        inputProps={{
+                                            name: "phone",
+                                            required: true,
+                                            autoFocus: true,
+                                        }}
+                                        inputClass="h-48px form-control form-control border-grey p-input-style font-16 w-100"
+                                    />
+                                </div>
+
                             </div>
-                            <div className="d-flex flex-column w-100">
-                                <label
-                                    className="font-16 font-weight-600 pb-2 "
-                                    htmlFor="email">
-                                    Mobile No.
-                                </label>
-                                <PhoneInput
-                                    onChange={(mobphone) => handleChangeMob(mobphone)}
-                                    specialLabel={""}
-                                    disableDropdown={false}
-                                    inputProps={{
-                                        name: "phone",
-                                        required: true,
-                                        autoFocus: true,
-                                    }}
-                                    inputClass="h-48px form-control form-control border-grey p-input-style font-16 w-100"
-                                />
+                            <div className='d-flex justify-content-between align-items-center '>
+                                <div className="d-flex flex-column mb-md-0 w-100">
+                                    <label
+                                        className="font-16 font-weight-600 pb-2 "
+                                        htmlFor="name">
+                                        Company Name
+                                    </label>
+                                    <input type="text" required placeholder='Enter Company Name' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
+                                </div>
                             </div>
 
                         </div>
-                        <div className='d-flex justify-content-between align-items-center mb-48px'>
-                            <div className="d-flex flex-column mb-md-0 w-100">
-                                <label
-                                    className="font-16 font-weight-600 pb-2 "
-                                    htmlFor="name">
-                                    Company Name
-                                </label>
-                                <input type="text" required placeholder='Enter Company Name' className='h-48px form-control border-grey p-input-style font-16 font-weight-400 w-100' />
-                            </div>
-                        </div>
-                        <div className="justify-content-end d-flex align-items-center ">
-                            <button className='btn-brown-outline mr-3' onClick={closeModal}>
-                                Cancel
-                            </button>
-                            <button className='btn-brown-bg' onClick={closeModal}>
-                                Save Changes
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div className="justify-content-end d-flex align-items-center mt-5">
+                        <button className='btn-brown-outline mr-3' onClick={closeModal}>
+                            Cancel
+                        </button>
+                        <button className='btn-brown-bg' type='submit' onClick={closeModal}>
+                            Save Changes
+                        </button>
+                    </div>
+                </form>
+                {/* </div> */}
             </Modal>
         </>
     )

@@ -18,7 +18,7 @@ const Sidebar = (props) => {
             sidebar.map((item, index) => {
               if (item.visiblity === true) {
                 return <Link key={index} to={`${item.link.toLowerCase()}`} className={`w-100  ${item.link.toLowerCase() === Location.pathname ? 'sidebar-item-active' : ''} sidebar-item`}>
-                  {item.icon} <span className="pl-3"> {item.name} </span>
+                  <p className="d-flex align-items-center sublink">{item.icon} <span className="pl-3"> {item.name} </span></p>
                 </Link>;
               }
             })

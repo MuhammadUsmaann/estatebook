@@ -26,14 +26,18 @@ const Profile = () => {
                         </div>
                     </div>
                     <div>
-                        <p className='font-16 font-weight-600 pb-2 text-light-black'>
-                            Change Picture
-                        </p>
-                        <button className='btn-brown-outline'>Upload Picture</button>
+                        <label className='cr-p' htmlFor='changepicture'>
+                            <input type='file' className='d-none' id='changepicture' />
+                            <p className='font-16 font-weight-600 pb-2 text-light-black'>
+                                Change Picture
+                            </p>
+                            <button className='btn-brown-outline'>Upload Picture</button>
+                        </label>
+
                     </div>
                 </div>
                 <div className='horizontal-line'></div>
-                <form>
+                <form onSubmit={(e) => { e.preventDefault() }}>
                     <div className='d-flex flex-md-row flex-column justify-content-between align-items-center'>
                         <div className="d-flex flex-column mb-4 w-100 mr-md-4">
                             <label
@@ -130,7 +134,7 @@ const Profile = () => {
                             <input type="checkbox" />
                             <span className="checkmark"></span>
                         </label>
-                        <button className='btn-brown-bg'>
+                        <button className='btn-brown-bg' type='submit'>
                             Save Changes
                         </button>
                     </div>

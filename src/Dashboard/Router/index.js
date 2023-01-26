@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import React from 'react';
 import Dashboard from '../../pages/dashboard';
 import ProfileSetting from '../../pages/profilesetting';
@@ -6,6 +6,7 @@ import Agents from '../../pages/agents';
 import PropertyManagement from '../../pages/propertyManagement';
 import PostListing from '../../pages/postListing';
 import CompanySetting from '../../pages/companySetting';
+import NotFound from '../../utils/notFound';
 // import { AdminRoutes, ProtectedRoutes, AuthenticatedRoutes } from '../../utils/ProtectedRoutes';
 
 const UserRouter = () => {
@@ -33,11 +34,14 @@ const UserRouter = () => {
                 <Route path="*" element={<Navigate replace to="/dashboard/notfound" />} /> */}
                 {/* <Route path="/" element={<Dashboard />} /> */}
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/propertymanagement" element={<PropertyManagement />} />
+                <Route path="/propertymanagement" element={<PropertyManagement />} />customprofilebuilder
+                <Route path="/customprofilebuilder" element={<NotFound />} />
                 <Route path="/postlisting" element={<PostListing />} />
                 <Route path="/profilesettings" element={<ProfileSetting />} />
                 <Route path="/companysettings" element={<CompanySetting />} />
                 <Route path="/agents" element={<Agents />} />
+                <Route path="*" element={<Navigate replace to="/notfound" />} />
+
 
                 {/* <Route path="/dashboard" element={<AuthenticatedRoutes component={Dashboard} />} />
                 <Route path="/propertymanagement" element={<AuthenticatedRoutes component={PropertyManagement} />} />

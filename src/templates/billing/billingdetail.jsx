@@ -6,6 +6,7 @@ import CustomModal from '../modal';
 import PaymentSuccess from '../../components/images/paymentSuccess';
 import MasterCard from '../../components/images/masterCard';
 import VisaImage from '../../components/images/visa';
+import PaymentFailed from '../../components/images/paymentFailed';
 
 const BillingDetail = () => {
 
@@ -695,19 +696,24 @@ const BillingDetail = () => {
                 </div>
             </div>
 
+            {/* if successful */}
             <CustomModal openModalCheck={openModalCheck} setopenModalCheck={setopenModalCheck}>
                 <div className='d-flex flex-column align-items-center px-8rem mt-5'>
                     <PaymentSuccess />
                     <p className='font-36 mt-5 font-weight-700 text-light-black pb-4'>Payment <span className='text-skin'> Successful!</span></p>
                     <p className='mb-100px font-18 text-grey font-weight-400'>Transaction Number: 8673528949</p>
                 </div>
-                <div className='d-flex justify-content-end flex-sm-row flex-column align-items-sm-center flex-wrap'>
-                    <button className='btn-brown-outline h-48px mb-sm-0 mb-3'>Cancel</button>
-                    <button className='btn-brown-bg ml-sm-3 px-5 h-48px'>Edit Template</button>
-
-                </div>
-
             </CustomModal>
+
+            {/* if not successful */}
+            {/* <CustomModal openModalCheck={openModalCheck} setopenModalCheck={setopenModalCheck}>
+                <div className='d-flex flex-column align-items-center px-8rem mt-5'>
+                    <PaymentFailed />
+                    <p className='font-36 mt-5 font-weight-700 text-skin pb-4'> Oops! <span className='text-light-black'>Something</span> Went Wrong!</p>
+                    <p className='mb-100px font-18 text-grey font-weight-400'>Transaction Number: 8673528949</p>
+                </div>
+            </CustomModal> */}
+
 
         </div>
 

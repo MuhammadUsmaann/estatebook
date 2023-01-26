@@ -349,7 +349,7 @@ select {
 
 .search-bar-icon {
   position: absolute;
-  top: 12px;
+  top: 9px;
   right: 16px;
 }
 
@@ -397,6 +397,7 @@ select {
 
 .app-sidebar .side-links {
   padding: 0px 26px;
+  /* overflow-y: auto; */
 }
 
 .sidebar-item {
@@ -414,7 +415,7 @@ select {
 
 .sidebar-item:hover,
 .sidebar-item:hover path {
-  color: var(--skin-brown);
+  color: var(--skin-brown) !important;
   stroke: var(--skin-brown);
 }
 
@@ -575,16 +576,35 @@ select {
 
 table thead tr th {
   height: 64px;
-  padding: 0px 21px !important;
+  padding: 0px 15px !important;
   font-weight: 600;
+}
+
+table thead tr th:nth-child(3) {
+  min-width: 120px !important;
+}
+
+table thead tr th:nth-child(6)
+{
+min-width: 125px !important;
+}
+
+table thead tr th:nth-child(7) {
+  min-width: 160px !important;
 }
 
 table tbody tr td {
   height: 64px !important;
-  padding: 0px 21px !important;
+  padding: 0px 15px !important;
   font-weight: 400;
 }
-
+table tbody tr td:last-child,td:nth-child(2) {
+  padding: 0px 15px !important;
+}
+table tbody tr td:last-child,
+td:nth-child(1) {
+  padding: 0px 21px !important;
+}
 table thead th {
   background-color: #FFF5E0;
 }
@@ -1062,4 +1082,12 @@ table tbody tr:nth-child(odd) {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
+}
+
+.notfound svg {
+  height: 300px !important;
+}
+
+.notfound {
+  height: 100vh;
 }

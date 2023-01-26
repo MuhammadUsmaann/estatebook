@@ -6,7 +6,7 @@ const ChangePassword = () => {
         <div className='profile-setting-detail d-flex justify-content-center align-items-center'>
             <div className='w-50 width-div'>
 
-                <form>
+                <form onSubmit={(e) => { e.preventDefault() }}>
                     <div className=''>
                         <div className="d-flex flex-column mb-4 w-100 mr-4">
                             <label
@@ -35,7 +35,7 @@ const ChangePassword = () => {
                     </div>
 
                     <div className="justify-content-end d-flex align-items-center mt-5">
-                        <button className='btn-brown-bg'>
+                        <button className='btn-brown-bg' type='submit'>
                             Save Changes
                         </button>
                     </div>

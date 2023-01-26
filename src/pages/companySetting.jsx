@@ -31,13 +31,17 @@ const CompanySetting = () => {
                                 </div>
                             </div>
                             <div>
-                                <p className='font-16 font-weight-600 pb-2 text-light-black'>
-                                    Change Picture
-                                </p>
-                                <button className='btn-brown-outline'>Upload Picture</button>
+                                <label className='cr-p' htmlFor='changepicture'>
+                                    <input type='file' className='d-none' id='changepicture' />
+                                    <p className='font-16 font-weight-600 pb-2 text-light-black'>
+                                        Change Picture
+                                    </p>
+                                    <button className='btn-brown-outline'>Upload Picture</button>
+                                </label>
+
                             </div>
                         </div>
-                        <form>
+                        <form onSubmit={(e) => { e.preventDefault() }}>
                             <div className='d-flex flex-md-row flex-column justify-content-between align-items-center'>
                                 <div className="d-flex flex-column mb-32 w-100 mr-md-4">
                                     <label
@@ -152,7 +156,7 @@ const CompanySetting = () => {
                                     <input type="checkbox" />
                                     <span className="checkmark"></span>
                                 </label>
-                                <button className='btn-brown-bg'>
+                                <button className='btn-brown-bg' type='submit'>
                                     Save Changes
                                 </button>
                             </div>
@@ -164,11 +168,14 @@ const CompanySetting = () => {
                     <div className='content-box mt-xl-0 mt-3 ml-xl-3 col-eq-height'>
                         <p className='font-24 font-weight-700 text-light-black'>Company Images & Videos</p>
                         <div className='horizontal-line'></div>
-                        <div className='d-flex flex-column align-items-center upload-image-box p30px mb-2 text-center'>
-                            <UploadImage />
-                            <p className='font-18 font-weight-600 text-light-black pt-4 pb-3'>Drag and drop files, or <span className='text-skin-brown'>Browse</span></p>
-                            <p className='font-14 text-light-grey font-weight-400'>Support PNG, JPEG, and MP4, GIF</p>
-                        </div>
+                        <label className='w-100 cr-p'>
+                            <input type='file' className='d-none'/>
+                            <div className='d-flex flex-column align-items-center upload-image-box p30px mb-2 text-center'>
+                                <UploadImage />
+                                <p className='font-18 font-weight-600 text-light-black pt-4 pb-3'>Drag and drop files, or <span className='text-skin-brown'>Browse</span></p>
+                                <p className='font-14 text-light-grey font-weight-400'>Support PNG, JPEG, and MP4, GIF</p>
+                            </div>
+                        </label>
                         <div className='d-flex align-items-center justify-content-between flex-wrap gap-8 upload-image-box mt-4 '>
                             <div className='d-flex align-items-center '>
                                 <CompanyFile />
@@ -177,7 +184,7 @@ const CompanySetting = () => {
                                     <p className='font-12 text-light-grey font-weight-400'>238 Kb</p>
                                 </div>
                             </div>
-                            <div className='bg-light-skin rounded-8 p-2'>
+                            <div className='bg-light-skin rounded-8 p-2 cr-p'>
                                 <DeleteIcon />
                             </div>
                         </div>
@@ -189,7 +196,7 @@ const CompanySetting = () => {
                                     <p className='font-12 text-light-grey font-weight-400'>238 Kb</p>
                                 </div>
                             </div>
-                            <div className='bg-light-skin rounded-8 p-2'>
+                            <div className='bg-light-skin rounded-8 p-2 cr-p'>
                                 <DeleteIcon />
                             </div>
                         </div>
@@ -201,7 +208,7 @@ const CompanySetting = () => {
                                     <p className='font-12 text-light-grey font-weight-400'>238 Kb</p>
                                 </div>
                             </div>
-                            <div className='bg-light-skin rounded-8 p-2'>
+                            <div className='bg-light-skin rounded-8 p-2 cr-p'>
                                 <DeleteIcon />
                             </div>
                         </div>
@@ -213,7 +220,7 @@ const CompanySetting = () => {
                                     <p className='font-12 text-light-grey font-weight-400'>238 Kb</p>
                                 </div>
                             </div>
-                            <div className='bg-light-skin rounded-8 p-2'>
+                            <div className='bg-light-skin rounded-8 p-2 cr-p'>
                                 <DeleteIcon />
                             </div>
                         </div>
@@ -222,8 +229,8 @@ const CompanySetting = () => {
                     </div>
                 </div>
 
-            </div>
-        </div>
+            </div >
+        </div >
 
     )
 }

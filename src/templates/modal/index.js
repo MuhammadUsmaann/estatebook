@@ -50,6 +50,11 @@ const CustomModal = (props) => {
                 <button onClick={closeModal}><CloseIcon /></button>
             </div>
             {children}
+            <div className='d-flex justify-content-end flex-sm-row flex-column align-items-sm-center flex-wrap'>
+                <button className='btn-brown-outline h-48px mb-sm-0 mb-3' onClick={closeModal}>Cancel</button>
+                <button className='btn-brown-bg ml-sm-3 px-5 h-48px'>Edit Template</button>
+
+            </div>
         </Modal>
 
     )

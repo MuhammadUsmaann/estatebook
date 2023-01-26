@@ -5,7 +5,7 @@ const Preferences = () => {
     return (
         <div className='profile-setting-detail d-flex justify-content-center align-items-center'>
             <div className='w-75 width-div'>
-                <form>
+                <form onSubmit={(e) => { e.preventDefault() }}>
                     <label className="d-flex align-items-center cr-p w-100 justify-content-between">
                         <div>
                             <p className='font-16 font-weight-600 text-light-black mb-2'>
@@ -83,7 +83,7 @@ const Preferences = () => {
 
                     <div className="justify-content-end d-flex align-items-center ">
 
-                        <button className='btn-brown-bg'>
+                        <button className='btn-brown-bg' type='submit'>
                             Save Changes
                         </button>
                     </div>

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import PreDefinedTemplates from '../templates'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import LandingFooter from './footer/landingFooter'
 import LandingHeader from './header/landingHeader'
 import LandingContent from './landingcontent'
 import './landingpage.css'
 import { useLocation } from 'react-router-dom';
+import NotFound from '../utils/notFound'
 
 const LandingPage = () => {
     const location = useLocation();
@@ -17,11 +17,7 @@ const LandingPage = () => {
             <Routes>
 
                 <Route path="/" element={<LandingContent />} />
-                {/* <Route path="/properties" element={<PreDefinedTemplates />} /> */}
-                {/* <Route path="/postlisting" element={<PostListing />} />
-                <Route path="/profilesettings" element={<ProfileSetting />} />
-                <Route path="/companysettings" element={<CompanySetting />} />
-                <Route path="/agents" element={<Agents />} /> */}
+                <Route path="*" element={<Navigate replace to="/notfound" />} />
 
             </Routes>
 

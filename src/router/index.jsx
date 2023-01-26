@@ -23,6 +23,8 @@ const Router = () => {
       <Route path="/signup" element={<Signup />} />
       <Route path="/accountverification" element={<AccountVerification />} />
       <Route path="/forgotpassword" element={<ForgotPasword />} />
+      <Route path="*" element={<Navigate replace to="/notfound" />} />
+
       {/* <Route path="/faq" element={<Faq />} />
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/blog-details" element={<BlogDetails />} />

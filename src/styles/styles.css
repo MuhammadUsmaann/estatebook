@@ -574,22 +574,22 @@ select {
   font-size: 16px;
 }
 
-table thead tr th {
+ table thead tr th {
   height: 64px;
   padding: 0px 15px !important;
   font-weight: 600;
 }
 
-table thead tr th:nth-child(3) {
+#agentspage table thead tr th:nth-child(3) {
   min-width: 120px !important;
 }
 
-table thead tr th:nth-child(6)
+#agentspage table thead tr th:nth-child(6)
 {
 min-width: 125px !important;
 }
 
-table thead tr th:nth-child(7) {
+#agentspage table thead tr th:nth-child(7) {
   min-width: 160px !important;
 }
 
@@ -602,7 +602,11 @@ table tbody tr td:last-child,td:nth-child(2) {
   padding: 0px 15px !important;
 }
 table tbody tr td:last-child,
-td:nth-child(1) {
+td:nth-child(1),
+table thead tr th:last-child,
+th:nth-child(1)
+
+{
   padding: 0px 21px !important;
 }
 table thead th {
